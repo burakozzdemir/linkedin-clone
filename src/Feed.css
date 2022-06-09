@@ -30,10 +30,10 @@
   font-weight: 600;
 }
 .feed-input > form > button {
-    display: none;
+  display: none;
 }
 
 .feed-inputOptions {
-    display: flex;
-    justify-content: space-evenly;
+  display: flex;
+  justify-content: space-evenly;
 }
