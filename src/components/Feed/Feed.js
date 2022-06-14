@@ -5,12 +5,12 @@ import ImageIcon from "@material-ui/icons/Image";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
-import InputOption from "./InputOption";
-import Post from "./Post";
-import { db } from "./firebase";
+import InputOption from "../InputOption/InputOption";
+import Post from "../Post/Post";
+import { db } from "../../utils/firebase";
 import firebase from "firebase";
 import { useSelector } from "react-redux";
-import { selectUser } from "./features/counter/userSlice";
+import { selectUser } from "../../store/reducers/userSlice";
 import FlipMove from "react-flip-move";
 
 const Feed = () => {

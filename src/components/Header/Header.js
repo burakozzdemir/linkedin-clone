@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import HeaderOption from "./HeaderOption";
+import HeaderOption from "../HeaderOption/HeaderOption";
 import SearchIcon from "@material-ui/icons/Search";
 import HomeIcon from "@material-ui/icons/Home";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
@@ -8,8 +8,8 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationIcon from "@material-ui/icons/Notifications";
 import { useDispatch, useSelector } from "react-redux";
-import { auth } from "./firebase";
-import { logout, selectUser } from "./features/counter/userSlice";
+import { auth } from "../../utils/firebase";
+import { logout, selectUser } from "../../store/reducers/userSlice";
 
 const Header = () => {
   // eslint-disable-next-line no-unused-vars

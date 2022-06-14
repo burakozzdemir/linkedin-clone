@@ -1,7 +1,7 @@
 import { Avatar } from "@material-ui/core";
 import React, { forwardRef } from "react";
 import "./Post.css";
-import InputOption from "./InputOption";
+import InputOption from "../InputOption/InputOption";
 import ThumbDownAltOutlinedIcon from "@material-ui/icons/ThumbDownAltOutlined";
 import ChatOutlinedIcon from "@material-ui/icons/CachedOutlined";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { auth } from "./firebase";
+import { auth } from "../../utils/firebase";
 import "./Login.css";
 import { useDispatch } from "react-redux";
-import { login } from "./features/counter/userSlice";
+import { login } from "../../store/reducers/userSlice";
 
 
 const Login = () => {
