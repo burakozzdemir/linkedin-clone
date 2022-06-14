@@ -5,9 +5,7 @@ import InputOption from "../InputOption/InputOption";
 import ThumbDownAltOutlinedIcon from "@material-ui/icons/ThumbDownAltOutlined";
 import ChatOutlinedIcon from "@material-ui/icons/CachedOutlined";
 import ShareOutlinedIcon from "@material-ui/icons/ShareOutlined";
-import SendOutlinedIcon from "@material-ui/icons/SendOutlined"; 
-import DeleteIcon from "@material-ui/icons/Delete"; 
-
+import SendOutlinedIcon from "@material-ui/icons/SendOutlined";
 
 const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
   return (
@@ -31,9 +29,6 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
         <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray" />{" "}
         <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />{" "}
         <InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
-        <InputOption Icon={DeleteIcon} title="Delete" color="gray" />
-        
-        
       </div>
     </div>
   );
