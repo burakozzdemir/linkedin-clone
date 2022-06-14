@@ -1,4 +1,4 @@
-.App {
+.app {
   background-color: #f3f2ef;
   display: flex;
   flex-direction: column;
@@ -7,4 +7,6 @@
 
 .app-body {
   display: flex;
+  margin: 35px 20px 0 20px;
+  max-width: 1200px;
 }
