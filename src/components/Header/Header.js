@@ -10,6 +10,7 @@ import NotificationIcon from "@material-ui/icons/Notifications";
 import { useDispatch, useSelector } from "react-redux";
 import { auth } from "../../utils/firebase";
 import { logout, selectUser } from "../../store/reducers/userSlice";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // eslint-disable-next-line no-unused-vars
@@ -37,7 +38,10 @@ const Header = () => {
       </div>
 
       <div className="header-right">
-        <HeaderOption Icon={HomeIcon} title="Home" />
+        <Link to="/">
+          <HeaderOption Icon={HomeIcon} title="Home" />
+        </Link>
+        {/* <Link to="/login">Login</Link> */}
         <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
         <HeaderOption Icon={ChatIcon} title="Chats" />
