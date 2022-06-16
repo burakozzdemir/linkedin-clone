@@ -1,0 +1,116 @@
+.layout {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* border-bottom: 0.1px solid lightgray; */
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  z-index: 999;
+}
+.layout-left {
+  display: flex;
+}
+.layout-left > img {
+  object-fit: contain;
+  height: 40px;
+  margin-left: 170px;
+  cursor: pointer;
+}
+.layout-right {
+  display: flex;
+}
+.sign-in {
+  width: 120px;
+  padding: 11px;
+  color: blue;
+  margin-right: 150px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  font-weight: 600px;
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.sign-in:hover {
+  background: #f0f8ff;
+}
+.join {
+  width: 120px;
+  padding: 11px;
+  color: black;
+  background-color: white;
+  margin-right: 5px;
+  border: none;
+  border-radius: 25px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.join:hover {
+  background: #EEEEEE;
+}
+.row{
+    width: 76%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #8f5849;
+    margin-top: 2%;
+}
+.row > h1{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    font-size: 12px;
+}
+ .content > h1{
+    font-size: 65px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 150;
+}  
+.container {
+  justify-content: flex-start;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.form > input {
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.login-register {
+  color: black;
+  margin: 5px 0 30px;
+  cursor: pointer;
+}
+.form > p {
+  margin-top: 20px;
+}
+.form > button {
+  width: 365px;
+  height: 50px;
+  font-size: large;
+  color: #fff;
+  background-color: #0073b1;
+  border-radius: 25px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: inherit;
+}
+.form > button:hover {
+  background: #006097;
+}
