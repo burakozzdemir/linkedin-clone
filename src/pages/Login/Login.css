@@ -23,11 +23,11 @@
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.login > form > button {
+.btn {
   width: 365px;
   height: 50px;
   font-size: large;
-  color: #fff;
+  color:  white;
   background-color: #0074b1;
   border-radius: 5px;
 }

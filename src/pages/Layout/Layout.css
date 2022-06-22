@@ -4,7 +4,6 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  /* border-bottom: 0.1px solid lightgray; */
   padding: 10px 0px 10px 0px;
   width: 100%;
   z-index: 999;
@@ -22,17 +21,16 @@
   display: flex;
 }
 .sign-in {
-  width: 120px;
+  width: 130px;
+  height: 50px;
   padding: 11px;
-  color: blue;
-  margin-right: 150px;
+  color: #0a66c2;
+  margin-right: 140px;
   background-color: white;
-  border: 1px solid lightgray;
+  border: 1px solid #0a66c2;
   border-radius: 25px;
-  letter-spacing: 1px;
   font-weight: 600px;
-  font-size: 15px;
-  font-family: sans-serif;
+  font-size: 18px;
   cursor: pointer;
 }
 .sign-in:hover {
@@ -41,57 +39,57 @@
 .join {
   width: 120px;
   padding: 11px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: black;
   background-color: white;
-  margin-right: 5px;
   border: none;
   border-radius: 25px;
-  letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 19px;
   font-family: sans-serif;
   cursor: pointer;
 }
 .join:hover {
-  background: #EEEEEE;
+  background: #eeeeee;
 }
-.row{
-    width: 76%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #8f5849;
-    margin-top: 2%;
+.row {
+  width: 76%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #8f5849;
+  margin-top: 2%;
 }
-.row > h1{
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    font-size: 12px;
+.row > h1 {
+  display: flex;
+  align-items: center;
+  margin: 15px;
+  font-size: 12px;
 }
- .content > h1{
-    font-size: 65px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-weight: 150;
-}  
-.container {
-  justify-content: flex-start;
+.content > h1 {
+  font-size: 65px;
+  margin-top: 20px;
+  margin-bottom: 500px;
+  font-weight: 150;
 }
 .form {
   display: flex;
   flex-direction: column;
-  margin-left: 100px;
+  margin-left: 175px;
+  position: absolute;
+  top: 53%;
 }
 .form > input {
-  width: 350px;
+  width: 430px;
   height: 50px;
   font-size: 20px;
   padding-left: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
+  border: 1px solid lightgray;
 }
-.login-register {
+.form > a {
   color: black;
   margin: 5px 0 30px;
   cursor: pointer;
@@ -100,8 +98,8 @@
   margin-top: 20px;
 }
 .form > button {
-  width: 365px;
-  height: 50px;
+  width: 440px;
+  height: 55px;
   font-size: large;
   color: #fff;
   background-color: #0073b1;
@@ -110,7 +108,19 @@
   letter-spacing: 1px;
   font-weight: normal;
   font-family: inherit;
+  border: 1px solid lightgray;
 }
 .form > button:hover {
   background: #006097;
+}
+.img {
+  width: 60%;
+}
+.img2 {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 45px;
+  margin-left: 173px;
+  margin-bottom: 30px;
 }
