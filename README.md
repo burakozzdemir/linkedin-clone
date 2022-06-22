@@ -1,69 +1,91 @@
-# Live Demo [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# [DEMO](http://localhost:3000)
 
-Built using React JS, Redux, React-Router v6, Firebase & Google Authentication within a two weeks.I added some features on my own.
+# Tech
 
-Features and Fuctionality
+- [React] - React is a JavaScript-based UI development framework.
+- [React-Redux] - Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+- [React-Router-v6] - React Router is a standard library for routing in React.
+- [Node.js] - evented I/O for the backend.
+- [Firebase] - App development platform that helps you build and grow apps and games users love.
+- [Material-UI] - Material-UI is an open-source project that features React components that implement Google's Material Design.
+- [Visual-Studio] -Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
-Post functionality
-Login using Google (Firebase Authentication)
-Create a new post with animated
-Realtime update posts
-Auto authenticate user on refresh
-4 different pages with React Router v6
-Login
-Log Out
-How to build your own..?
-Clone this repo
+## Features and Functionality
 
-Install all the dependencies
+- Post functionality
+- Login using Google (Firebase Authentication)
+- Create a new post with animated
+- Realtime update posts
+- Auto authenticate user on refresh
+- 4 different pages with React Router v6
+- Login
+- Log Out
+- Clone this repo
 
-yarn i
+### How to build ?
 
-Setup Firebase
+#### 1.Clone this repo
 
-Create Firebase account
+#### 2.Install all the dependencies
 
-Create a new project
+```sh
+  yarn i
+```
 
-Create a web app for that
+#### 3.Setup Firebase
 
-Copy your config from there
+- Create Firebase account
+- Create a new project
+- Create a web app for that
+- Setup authentication using Google
 
-Select config option
-Paste those config inside firebase/config.js file
-Setup authentication using Google
+#### 4.Let's build the optimized version
 
-Tweak code as you like
+```sh
+  yarn run build
+```
 
-Let's build the optimized version
+#### 5.Integrating Firebase
 
-yarn add build
-Now for hosting on Firebase lets config Firebase locally
+- Install Firebase CLI
+- Login to Firebase
 
-Setup Redux 
+```sh
+  firebase login
+```
 
-Setup React Router v6 
+- Initialize Firebase
 
-Install Firebase CLI
+```sh
+  firebase init
+```
 
-Login to Firebase
+- Deploy clone and make it live
 
-firebase login
-Initialize Firebase
+```sh
+  firebase deploy
+```
 
-firebase init
-Select hosting in the menu
+#### 6.Setup Redux
 
-Select your respective project from the list
+- Login
+- Logout
 
-Select 'build' as your hosting directory and other options as you want
+#### 7.Setup React Router v6
 
-Let's deploy our clone and make it live
+- Create different 4 pages
 
-firebase deploy
-That's it our clone is up and running share it now
+```sh
+  /
+  /home
+  /register
+  /login
+```
 
-Future Plans
-Post deleting functionality
-Add comments on post
+### Future Plans
+
+- Post deleting functionality
+- Add comments on post
+- Add dropdown menu
+
 NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY SUGGESTIONS
