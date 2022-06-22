@@ -1,46 +1,69 @@
-# Getting Started with Create React App and Redux
+# Live Demo [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+Built using React JS, Redux, React-Router v6, Firebase & Google Authentication within a two weeks.I added some features on my own.
 
-## Available Scripts
+Features and Fuctionality
 
-In the project directory, you can run:
+Post functionality
+Login using Google (Firebase Authentication)
+Create a new post with animated
+Realtime update posts
+Auto authenticate user on refresh
+4 different pages with React Router v6
+Login
+Log Out
+How to build your own..?
+Clone this repo
 
-### `npm start`
+Install all the dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+yarn i
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Setup Firebase
 
-### `npm test`
+Create Firebase account
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Create a new project
 
-### `npm run build`
+Create a web app for that
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Copy your config from there
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Select config option
+Paste those config inside firebase/config.js file
+Setup authentication using Google
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tweak code as you like
 
-### `npm run eject`
+Let's build the optimized version
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+yarn add build
+Now for hosting on Firebase lets config Firebase locally
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Setup Redux 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Setup React Router v6 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Install Firebase CLI
 
-## Learn More
+Login to Firebase
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+firebase login
+Initialize Firebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+firebase init
+Select hosting in the menu
+
+Select your respective project from the list
+
+Select 'build' as your hosting directory and other options as you want
+
+Let's deploy our clone and make it live
+
+firebase deploy
+That's it our clone is up and running share it now
+
+Future Plans
+Post deleting functionality
+Add comments on post
+NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY SUGGESTIONS
