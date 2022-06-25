@@ -1,95 +1,66 @@
-import React, { useState } from "react";
-import { auth } from "../../utils/firebase";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React from "react";
 import "./Login.css";
-import { useDispatch } from "react-redux";
-import { login } from "../../store/reducers/userSlice";
+import { NavLink } from "react-router-dom";
+import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 
 
 const Login = () => {
-  const [email, SetEmail] = useState("");
-  const [password, SetPassword] = useState("");
-  const [name, SetName] = useState("");
-  const [profilePic, SetprofilePic] = useState("");
-  const dispatch = useDispatch();
-
-  const loginToApp = (e) => {
-    e.preventDefault();
-
-    auth.signInWithEmailAndPassword(email, password)
-    .then(userAuth => {
-        dispatch(login({
-            email: userAuth.user.email,
-            uid: userAuth.user.uid,
-            displayName: userAuth.user.displayName,
-            profileUrl: userAuth.user.photoURL,
-        }))
-    }).catch(error => alert(error));
-  };
-
-  const register = () => {
-    if (!name) {
-      return alert("Please enter a full name!");
-    }
-
-    auth.createUserWithEmailAndPassword(email, password).then((userAuth) => {
-      userAuth.user
-        .updateProfile({
-          displayName: name,
-          photoURL: profilePic,
-        })
-        .then(() => {
-          dispatch(
-            login({
-              email: userAuth.user.email,
-              uid: userAuth.user.uid,
-              displayName: name,
-              photoURL: profilePic,
-            })
-          );
-        });
-    }).catch(error => alert(error));
-  };
-
   return (
-    <div className="login">
-      <img src="./Linkedin.png" alt="" />
-      <form>
-        <input
-          value={name}
-          onChange={(e) => SetName(e.target.value)}
-          placeholder="Full name (required if registering)"
-          type="text"
-        />
+    <>
+      <div className="login">
+        <img src="./Logo.png" alt="" />
+        <div>
+          <h2 className="header-signIn">Sign In</h2>
+          <h4 className="header-h4">
+            Get the latest news about your professional <br /> world.
+          </h4>
+        </div>
+        <form>
+          <input placeholder="Email" type="email" />
+          <input placeholder="Password" type="password" />
+          <a className="form-link">Forgot your password?</a>
 
-        <input
-          value={profilePic}
-          onChange={(e) => SetprofilePic(e.target.value)}
-          placeholder="Profile pic URL (optional)"
-          type="text"
-        />
-        <input
-          value={email}
-          onChange={(e) => SetEmail(e.target.value)}
-          placeholder="Email"
-          type="email"
-        />
-        <input
-          value={password}
-          onChange={(e) => SetPassword(e.target.value)}
-          placeholder="Password"
-          type="password"
-        />
-        <button type="submit" onClick={loginToApp}>
-          Sign In
-        </button>
-      </form>
-      <p>
-        Not a member ?{" "}
-        <span className="login-register" onClick={register}>
-          Register Now
-        </span>
-      </p>
-    </div>
+          {/* <Link to="/home">   type= "submit yerine button oldu." */}
+          <button className="btn-login" type="submit">
+            Sign In
+          </button>
+          {/* </Link> */}
+
+          <p className="section-2">
+            or
+            <hr />
+          </p>
+        </form>
+
+        <div className="google-login-one">
+          <SignInGoogle />
+        </div>
+
+        <p className="member-p">
+          New to LinkedIn? {""}
+          <NavLink
+            to="/login"
+            style={() => ({ color: "white", textDecoration: "none" })}
+          >
+            <span className="login-now">Register Now</span>{" "}
+          </NavLink>
+        </p>
+        {/* // eslint-disable-next-line jsx-a11y/anchor-has-content */}
+
+        <footer className="footer-login">
+          <img src="./Logo.png" alt="" />
+          <a href=""> © 2022</a>
+          <a href="">User Agreement</a>
+          <a href="">Privacy Policy</a>
+          <a href="">Community Guidelines</a>
+          <a href="">Cookie Policy</a>
+          <a href="">Copyright Policy</a>
+          <a href="">Send Feedback</a>
+          <a href="">Language</a>
+        </footer>
+      </div>
+    </>
   );
 };
 
