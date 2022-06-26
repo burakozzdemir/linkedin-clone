@@ -8,9 +8,10 @@
 }
 
 .sidebar-avatar {
-  margin-bottom: 10px;
+  position: relative;
+  bottom: 20px;
+  cursor: pointer;
 }
-
 .sidebar-top {
   display: flex;
   flex-direction: column;
@@ -25,9 +26,13 @@
 .sidebar-top > h4 {
   color: gray;
   font-size: 12px;
+  margin-top: 7px;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 .sidebar-top > h2 {
-  font-size: 18px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .sidebar-top > img {
@@ -42,20 +47,33 @@
   display: flex;
   justify-content: space-between;
 }
-
 .sidebar-stat > p {
   color: gray;
   font-size: 13px;
   font-weight: 600;
+  color: black;
+  cursor: pointer;
 }
-
+.sidebar-stat > a {
+  text-decoration: none;
+  font-size: 12px;
+  margin-top: 5px;
+  color: black;
+  font-weight: bold;
+  margin-left: 25px;
+  position: relative;
+  bottom: 13px;
+}
+.sidebar-stat > a:hover {
+  color: blue;
+}
 .sidebar-stats {
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid lightgray;
   background-color: white;
-  border-bottom-left-radius: 10px;
-  border-top-right-radius: 10px;
+}
+.sidebar-stats:hover {
+  background: lightgray;
 }
 .sidebar-statNumber {
   font-weight: bold;
@@ -64,15 +82,16 @@
 .sidebar-bottom {
   text-align: left;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 7px;
   border: 1px solid lightgray;
   background-color: white;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .sidebar-recentItem {
   display: flex;
   font-size: 13px;
-  color: gray;
+  color: #0a66c2;
   font-weight: bolder;
   cursor: pointer;
   margin-bottom: 5px;
@@ -84,12 +103,44 @@
   padding-bottom: 10px;
 }
 .sidebar-recentItem:hover {
-  background-color: whitesmoke;
-  border-radius: 10px;
+  text-decoration: underline;
   cursor: pointer;
-  color: black;
 }
-.sidebar-hash {
-  margin-right: 10px;
-  margin-left: 5px;
+.sidebar-p {
+  margin-left: 50px;
+  color: gray;
+  position: relative;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.sidebar-stats-one {
+  padding: 10px;
+  border: 1px solid lightgray;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.sidebar-stat-one > p {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+  cursor: pointer;
+}
+
+.sidebar-one-p {
+  position: relative;
+  bottom: 5px;
+  left: 25px;
+}
+.sidebar-stats-one:hover {
+  background: lightgray;
+}
+.sidebar-two-p {
+  position: relative;
+  bottom: 8px;
 }

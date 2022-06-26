@@ -16,7 +16,7 @@ const HeaderOption = ({ avatar, Icon, title, onClick }) => {
         </Avatar>
       )}
 
-      <h3 className="headerOption-title"> {title} </h3>
+      <h3 className="headerOption-title">{title}</h3>
     </div>
   );
 };

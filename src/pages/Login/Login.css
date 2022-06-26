@@ -6,7 +6,7 @@
   padding: 100px 0 100px 0;
   background: #fff;
 }
-.login > img {
+.login > a > img {
   object-fit: contain;
   margin: 23px 0px 0px 90px;
   position: absolute;

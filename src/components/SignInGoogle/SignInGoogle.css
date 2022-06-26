@@ -1,13 +1,15 @@
 .button {
   height: 48px;
-  width: 370px;
+  width: 320px;
   font-size: large;
   color: black;
   background: #fff;
   border-radius: 24px;
-  margin-top: 5px;
+  margin-top: 20px;
   margin-bottom: 30px;
-  border: 1px solid lightgray;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  margin-left: -100px;
 }
 .button:hover {
   background: whitesmoke;

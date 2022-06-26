@@ -1,6 +1,7 @@
 import React from "react";
-import { firebase } from "../../utils/firebase";
 import "./SignInGoogle.css";
+import { NavLink } from "react-router-dom";
+import { firebase } from "../../utils/firebase";
 
 const SignInGoogle = () => {
   const SignInWithFirebase = () => {
@@ -17,10 +18,11 @@ const SignInGoogle = () => {
   };
   return (
     <div>
-      <button className="button" onClick={SignInWithFirebase}>
-        {" "}
-        <img src="./Google.png" alt="" /> Continue with Google
-      </button>
+      <NavLink to="/home">
+        <button className="button" onClick={SignInWithFirebase}>
+          <img src="./Google.png" alt="" /> Continue with Google
+        </button>
+      </NavLink>
     </div>
   );
 };

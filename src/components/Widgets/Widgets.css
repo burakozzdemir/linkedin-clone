@@ -1,7 +1,7 @@
 .widgets {
   position: sticky;
   top: 80px;
-  flex: 0.2;
+  flex: 0.28;
   background: #fff;
   border-radius: 10px;
   border: 1px solid lightgray;
@@ -16,7 +16,8 @@
 }
 .widgets-header h2 {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: bold;
+  cursor: pointer;
 }
 .widgets-article {
   display: flex;

@@ -19,13 +19,13 @@ const Widgets = () => {
   return (
     <div className="widgets">
       <div className="widgets-header">
-        <h2>Linkedin News</h2>
+        <h2>Add to your feed</h2>
         <InfoIcon />
       </div>
       {newsArticle("Burak Özdemir is here", "Top news - 10500 readers")}
       {newsArticle("Coronavirus: Turkey updates", "Top news - 525 readers")}
       {newsArticle("Tesla hits new higs", "Cars & auto  - 647 readers")}
-      {newsArticle("Bitcon Breaks $29k", "Crypto- 7650 readers")}
+      {newsArticle("Bitcoin Breaks $20k", "Crypto- 7650 readers")}
       {newsArticle("Is Redux too reusable?!", "Top news - 4542 readers")}
     </div>
   );

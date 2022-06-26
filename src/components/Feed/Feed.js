@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Feed.css";
-import CreateIcon from "@material-ui/icons/Create";
 import ImageIcon from "@material-ui/icons/Image";
 import SubscriptionsIcon from "@material-ui/icons/Subscriptions";
 import EventNoteIcon from "@material-ui/icons/EventNote";
@@ -12,6 +11,7 @@ import firebase from "firebase";
 import { useSelector } from "react-redux";
 import { selectUser } from "../../store/reducers/userSlice";
 import FlipMove from "react-flip-move";
+import { Avatar } from "@material-ui/core";
 
 const Feed = () => {
   const user = useSelector(selectUser);
@@ -49,11 +49,14 @@ const Feed = () => {
     <div className="feed">
       <div className="feed-inputContainer">
         <div className="feed-input">
-          <CreateIcon />
+          <Avatar src={user?.photoUrl} className="feed-avatar">
+            {user?.email[0]}{" "}
+          </Avatar>
           <form>
             <input
               value={input}
               onChange={(e) => setInput(e.target.value)}
+              placeholder="Start a post"
               type="text"
             />
             <button onClick={sendPost} type="submit">
@@ -76,9 +79,12 @@ const Feed = () => {
           />
         </div>
       </div>
+      <div>
+        <hr className="hr-two" />
+      </div>
       {/* Posts */}
       <FlipMove>
-        {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
+        {posts.map(({ id, data: { name, description, message, photoUrl} }) => {
           if (!!name) {
             return (
               <Post

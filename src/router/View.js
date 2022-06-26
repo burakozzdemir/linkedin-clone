@@ -1,31 +1,24 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "../components/Layout/Layout";
+import Layout from "../pages/Layout/Layout";
 import Login from "../pages/Login/Login";
-import Feed from "../components/Feed/Feed";
-import Sidebar from "../components/Sidebar/Sidebar";
-import Widgets from "../components/Widgets/Widgets";
-import Header from "../components/Header/Header";
+import Register from "../pages/Register/Register";
+import Home from "../pages/Home/Home";
 
 const View = () => {
-    // eslint-disable-next-line no-unused-vars
-    const [user, setUser] = useState(null)
+  // eslint-disable-next-line no-unused-vars
+  const [user, setUser] = useState(null);
+
   return (
-    <Routes>
-      <Route path="/" element={<Layout />} />
-      {!user ? (
-        <Route path="login" element={<Login />} />
-      ) : (
-        <>
-          <Route path="/home" element={<Header />} />
-          <Route path="/home" element={<Sidebar />} />
-          <Route path="/home" element={<Feed />} />
-          <Route path="/home" element={<Widgets />} />
-        </>
-      )}
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/*" element={<Layout />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </>
   );
 };
-
 
 export default View;

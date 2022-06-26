@@ -1,4 +1,4 @@
-import React from "react";
+import React  from "react";
 import "./Header.css";
 import HeaderOption from "../HeaderOption/HeaderOption";
 import SearchIcon from "@material-ui/icons/Search";
@@ -7,46 +7,51 @@ import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationIcon from "@material-ui/icons/Notifications";
-import { useDispatch, useSelector } from "react-redux";
-import { auth } from "../../utils/firebase";
-import { logout, selectUser } from "../../store/reducers/userSlice";
-import { Link } from "react-router-dom";
+import ViewComfyIcon from "@material-ui/icons/ViewComfy";
+import { NavLink } from "react-router-dom";
+import Logout from "../Logout/Logout";
 
 const Header = () => {
-  // eslint-disable-next-line no-unused-vars
-  const user = useSelector(selectUser);
-
-  const dispatch = useDispatch();
-
-  const logoutOfApp = () => {
-    dispatch(logout());
-    auth.signOut();
-  };
-
   return (
     <div className="header">
       <div className="header-left">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png"
-          alt=""
-        />
-
+        <NavLink to="/login">
+          <img
+            className="header-left-img"
+            src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png "
+            alt=""
+          />
+        </NavLink>
         <div className="header-search">
           <SearchIcon />
           <input placeholder="Search" type="text" />
         </div>
       </div>
-
       <div className="header-right">
-        <Link to="/">
-          <HeaderOption Icon={HomeIcon} title="Home" />
-        </Link>
-        {/* <Link to="/login">Login</Link> */}
+        <HeaderOption Icon={HomeIcon} title="Home" />
         <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
         <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
-        <HeaderOption Icon={ChatIcon} title="Chats" />
+        <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationIcon} title="Notifications" />
-        <HeaderOption avatar={true} onClick={logoutOfApp} />
+        <Logout />
+        <hr className="hr-one" />
+        <HeaderOption Icon={ViewComfyIcon} title="Work" />
+        <a
+          href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3FshowPremiumWelcomeBanner%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
+          className="premium-link"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Try Premium for <br />
+          <a
+            href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3FshowPremiumWelcomeBanner%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
+            target="_blank"
+            className="premium-link-one"
+            rel="noreferrer"
+          >
+            free
+          </a>
+        </a>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@
 .layout-left {
   display: flex;
 }
-.layout-left > img {
+.layout-left > a >img {
   object-fit: contain;
   height: 40px;
   margin-left: 170px;
@@ -97,7 +97,7 @@
 .form > p {
   margin-top: 20px;
 }
-.form > button {
+.btn-sign-In {
   width: 440px;
   height: 55px;
   font-size: large;

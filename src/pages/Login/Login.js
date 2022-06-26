@@ -9,7 +9,9 @@ const Login = () => {
   return (
     <>
       <div className="login">
+        <a href="http://localhost:3001/login">
         <img src="./Logo.png" alt="" />
+        </a>
         <div>
           <h2 className="header-signIn">Sign In</h2>
           <h4 className="header-h4">

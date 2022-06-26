@@ -1,102 +1,141 @@
 .register {
-  background-color: whitesmoke;
   display: grid;
   place-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0px auto 0px auto;
   padding: 100px 0 100px 0;
-  margin-top: -20px;
+  background: whitesmoke;
 }
-.register > img {
+.register > a > img {
   object-fit: contain;
   height: 80px;
-  margin-top: 15px;
-  margin-left: 90px;
+  margin: 15px 0px 0px 90px;
   position: absolute;
   left: 5%;
   top: 1%;
   height: 40px;
   cursor: pointer;
 }
-.header-h2 {
+.register-h2 {
   text-align: center;
   background: whitesmoke;
   font-size: 35px;
   font-weight: 400;
+  position: absolute;
+  top: 80px;
 }
-.register > form {
+.form-body {
+  background: white;
+  width: 400px;
+  height: 450px;
+  border-radius: 10px;
+  margin-top: 47px;
+}
+.form-body > form {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  position: absolute;
+  top: 18%;
+  left: 36%;
+  align-items: center;
 }
-.register > form > input {
-  width: 400px;
-  height: 40px;
+.form-body > form > input {
+  width: 350px;
+  height: 35px;
+  margin-left: 20px;
+  margin-bottom: 5px;
   font-size: 20px;
   padding-left: 10px;
-  margin-bottom: 30px;
   border-radius: 5px;
   border: 1px solid black;
+  position: relative;
+  top: 40px;
 }
-.section {
+.section2 {
   text-align: center;
-  font-size: 15px;
   position: absolute;
-  bottom: 50.5%;
-  right: 36.5%;
+  bottom: -130px;
+  left: 51%;
+  margin-top: 15px;
 }
-.section > a {
+.section2-hr {
+  width: 280px;
+  margin-left: 22px;
+  border: 1px solid lightgray;
+  position: relative;
+  top: 141px;
+}
+.google-register {
+  position: absolute;
+  bottom: 18%;
+  right: 38.7%;
+}
+
+.section-p {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  right: -3%;
+  bottom: -50px;
+}
+.section-p a {
   text-decoration: none;
+  color: #0a66c2;
 }
-.btn-register {
+.member-p {
+  margin-left: -100px;
+}
+.member-one-p {
+  position: absolute;
+  bottom: 17%;
+  right: 39%;
+}
+.btn-register-one {
+  width: 346px;
   height: 48px;
-  width: 410px;
   font-size: large;
   color: white;
   background-color: #0a66c2;
   border-radius: 24px;
-  margin-top: 50px;
   border: 1px solid lightgray;
   cursor: pointer;
+  position: absolute;
+  bottom: -49%;
+  right: 2%;
 }
-.btn-register:hover {
-  background: #004182;
+.btn-register-one:hover {
+  background: #0a56c2;
 }
-.section2 {
-  text-align: center;
-  margin-top: 15px;
-}
-.section2 > hr {
-  margin-top: 10px;
-}
-.google-login {
-  margin-top: 20px;
-  margin-bottom: -20px;
-}
-.login-register {
-  color: #0a66c2;
+.register-now {
+  color: #0177b7;
   cursor: pointer;
+  font-weight: 600;
 }
-.register > p {
+.form-body > p {
   margin-top: 20px;
 }
-.link3 {
-  text-decoration: none;
-  color: #0a66c2;
+.create-register {
+  position: absolute;
+  bottom: 9%;
+  right: 38%;
 }
-.footer {
+.create-register > a {
+  font-weight: 600;
+}
+
+.footer-register {
   text-align: center;
   position: absolute;
-  bottom: 1%;
+  bottom: 0.3%;
   font-size: 13.5px;
 }
-.footer > img {
-  width: 3.5%;
+.footer-register > img {
+  width: 4.5%;
+  position: relative;
+  top: 3px;
 }
-.footer > a {
+.footer-register > a {
   text-decoration: none;
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0px 10px 0px 10px;
   color: black;
   font-family: sans-serif;
 }
