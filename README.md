@@ -4,6 +4,7 @@
 
 - [React] - React is a JavaScript-based UI development framework.
 - [React-Redux] - Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+- [React-ReduxJs/Toolkit] - Redux Toolkit is an official, opinionated, batteries-included toolset for efficient Redux development.
 - [React-Router-v6] - React Router is a standard library for routing in React.
 - [Node.js] - evented I/O for the backend.
 - [Firebase] - App development platform that helps you build and grow apps and games users love.
