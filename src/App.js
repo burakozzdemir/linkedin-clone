@@ -9,6 +9,7 @@ import { useEffect } from "react";
 const App = () => {
   // eslint-disable-next-line no-unused-vars
   const user = useSelector(selectUser);
+
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -39,18 +40,3 @@ const App = () => {
 };
 
 export default App;
-
-// {
-  /* <div className="app">
-  <Header />
-  {!user ? (
-    <Login />
-  ) : (
-    <div className="app-body">
-      <Sidebar />
-      <Feed />
-      <Widgets />
-    </div>
-  )}
-</div>; */
-// }

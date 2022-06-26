@@ -1,4 +1,4 @@
-import React  from "react";
+import React from "react";
 import "./Header.css";
 import HeaderOption from "../HeaderOption/HeaderOption";
 import SearchIcon from "@material-ui/icons/Search";
@@ -34,11 +34,10 @@ const Header = () => {
         <HeaderOption Icon={ChatIcon} title="Messaging" />
         <HeaderOption Icon={NotificationIcon} title="Notifications" />
         <Logout />
-        <hr className="hr-one" />
+        <hr className="header-hr" />
         <HeaderOption Icon={ViewComfyIcon} title="Work" />
         <a
           href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3FshowPremiumWelcomeBanner%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
-          className="premium-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -46,8 +45,8 @@ const Header = () => {
           <a
             href="https://www.linkedin.com/premium/survey/?destRedirectURL=https%3A%2F%2Fwww.linkedin.com%2Ffeed%2F%3FshowPremiumWelcomeBanner%3Dtrue&upsellOrderOrigin=premium_nav_upsell_text"
             target="_blank"
-            className="premium-link-one"
             rel="noreferrer"
+            className="header-link"
           >
             free
           </a>

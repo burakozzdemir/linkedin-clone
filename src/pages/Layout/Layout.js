@@ -9,12 +9,6 @@ import HeaderOption from "../../components/HeaderOption/HeaderOption";
 import "./Layout.css";
 
 const Layout = () => {
-  const register = (user) => {
-    if (!user) {
-      return alert("Please enter a full name!");
-    }
-  };
-
   return (
     <>
       <div className="layout">
@@ -30,26 +24,25 @@ const Layout = () => {
           <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
           <hr />
           <Link to="/register">
-            <button className="join">Join now</button>
+            <button className="button-one">Join now</button>
           </Link>
 
           <Link to="/login">
-            <button className="sign-in">Sign In</button>
+            <button className="button-two">Sign In</button>
           </Link>
         </div>
       </div>
 
-      <div class="row">
+      <div class="layout-row">
         <div>
-          <div class="content">
+          <div className="layout-content">
             <h1>
               Welcome to your <br /> proffessional <br /> community!
             </h1>
           </div>
         </div>
-        <div className="img">
+        <div className="layout-img">
           <img
-            className="img2"
             src="https://static-exp1.licdn.com/aero-v1/sc/h/dxf91zhqd2z6b0bwg85ktm5s4"
             alt=""
           />
@@ -57,17 +50,13 @@ const Layout = () => {
       </div>
 
       <div>
-        <form className="form">
+        <form className="layout-form">
           <input type="text" placeholder="E-mail or phone number"></input>
           <input type="text" placeholder="Password"></input>
           <a>Forgot your password?</a>
 
-          {/* {!user ? ( */}
-
           <NavLink to="/login">
-            <button className="btn-sign-In" onClick={register}>
-              Sign In
-            </button>
+            <button className="layout-button">Sign In</button>
           </NavLink>
         </form>
       </div>

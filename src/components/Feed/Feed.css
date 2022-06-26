@@ -2,7 +2,6 @@
   flex: 0.45;
   margin: 9px 20px;
 }
-
 .feed-inputContainer {
   background-color: white;
   padding: 10px 0 14px;
@@ -50,7 +49,7 @@
   position: relative;
   bottom: 7px;
 }
-.hr-two {
+.feed-hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border: 0.5px solid lightgray;

@@ -88,6 +88,7 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
+
 .sidebar-recentItem {
   display: flex;
   font-size: 13px;
@@ -97,32 +98,22 @@
   margin-bottom: 5px;
   padding: 5px;
 }
-.sidebar-bottom > p {
-  font-weight: bold;
-  font-size: 13px;
-  padding-bottom: 10px;
-}
 .sidebar-recentItem:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-.sidebar-p {
-  margin-left: 50px;
-  color: gray;
+.sidebar-text {
   position: relative;
-  bottom: 5px;
-  font-size: 14px;
-  font-weight: 600;
+  bottom: 8px;
 }
-.sidebar-stats-one {
+.sidebar-stats-text {
   padding: 10px;
   border: 1px solid lightgray;
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-
-.sidebar-stat-one > p {
+.sidebar-stat-text > p {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
@@ -131,16 +122,19 @@
   color: black;
   cursor: pointer;
 }
-
-.sidebar-one-p {
+.sidebar-items {
   position: relative;
   bottom: 5px;
   left: 25px;
 }
-.sidebar-stats-one:hover {
+.sidebar-stats-text:hover {
   background: lightgray;
 }
-.sidebar-two-p {
+.sidebar-bottom-text {
+  margin-left: 50px;
+  color: gray;
   position: relative;
-  bottom: 8px;
+  bottom: 5px;
+  font-size: 14px;
+  font-weight: 600;
 }

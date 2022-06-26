@@ -20,22 +20,3 @@ const Home = () => {
 };
 
 export default Home;
-
-// <>
-//       <Routes>
-//         <Route path="/*" element={<Layout />} />
-
-//         {!user ? (
-
-//           <Route path="/login" element={<Login />} />
-//         ) : (
-//           <>
-//             <Route path="/home" element={<Home />} />
-//             {/* <Route path="/home" element={<Header />} />
-//             <Route path="/home" element={<Sidebar />} />
-//             <Route path="/home" element={<Feed />} />
-//             <Route path="/home" element={<Widgets />} /> */}
-//           </>
-//         )}
-//       </Routes>
-//     </>

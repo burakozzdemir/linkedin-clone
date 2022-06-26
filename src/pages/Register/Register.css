@@ -15,7 +15,7 @@
   height: 40px;
   cursor: pointer;
 }
-.register-h2 {
+.register > h2 {
   text-align: center;
   background: whitesmoke;
   font-size: 35px;
@@ -23,14 +23,14 @@
   position: absolute;
   top: 80px;
 }
-.form-body {
+.register-form {
   background: white;
   width: 400px;
   height: 450px;
   border-radius: 10px;
   margin-top: 47px;
 }
-.form-body > form {
+.register-form > form {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -38,7 +38,7 @@
   left: 36%;
   align-items: center;
 }
-.form-body > form > input {
+.register-form > form > input {
   width: 350px;
   height: 35px;
   margin-left: 20px;
@@ -50,46 +50,18 @@
   position: relative;
   top: 40px;
 }
-.section2 {
-  text-align: center;
-  position: absolute;
-  bottom: -130px;
-  left: 51%;
-  margin-top: 15px;
-}
-.section2-hr {
-  width: 280px;
-  margin-left: 22px;
-  border: 1px solid lightgray;
-  position: relative;
-  top: 141px;
-}
-.google-register {
-  position: absolute;
-  bottom: 18%;
-  right: 38.7%;
-}
-
-.section-p {
+.register-text {
   text-align: center;
   font-size: 14px;
   position: relative;
   right: -3%;
   bottom: -50px;
 }
-.section-p a {
+.register-text > a {
   text-decoration: none;
   color: #0a66c2;
 }
-.member-p {
-  margin-left: -100px;
-}
-.member-one-p {
-  position: absolute;
-  bottom: 17%;
-  right: 39%;
-}
-.btn-register-one {
+.register-button {
   width: 346px;
   height: 48px;
   font-size: large;
@@ -102,38 +74,60 @@
   bottom: -49%;
   right: 2%;
 }
-.btn-register-one:hover {
+.register-button:hover {
   background: #0a56c2;
+}
+.register-span {
+  text-align: center;
+  position: absolute;
+  bottom: -130px;
+  left: 51%;
+  margin-top: 15px;
+}
+.register-span-hr {
+  width: 280px;
+  margin-left: 22px;
+  border: 1px solid lightgray;
+  position: relative;
+  top: 141px;
+}
+.register-google {
+  position: absolute;
+  bottom: 18%;
+  right: 38.7%;
+}
+.register-member {
+  position: absolute;
+  bottom: 17%;
+  right: 39%;
 }
 .register-now {
   color: #0177b7;
   cursor: pointer;
   font-weight: 600;
 }
-.form-body > p {
-  margin-top: 20px;
-}
-.create-register {
+.register-create {
   position: absolute;
   bottom: 9%;
   right: 38%;
 }
-.create-register > a {
+.register-create > a {
   font-weight: 600;
+  color: #0177b7;
+  text-decoration: none;
 }
-
-.footer-register {
+.register-footer {
   text-align: center;
   position: absolute;
   bottom: 0.3%;
   font-size: 13.5px;
 }
-.footer-register > img {
+.register-footer > img {
   width: 4.5%;
   position: relative;
   top: 3px;
 }
-.footer-register > a {
+.register-footer > a {
   text-decoration: none;
   margin: 0px 10px 0px 10px;
   color: black;

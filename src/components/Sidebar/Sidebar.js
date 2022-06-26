@@ -34,7 +34,7 @@ const Sidebar = () => {
           <p className="sidebar-statNumber">450</p>
         </div>
         <div className="sidebar-stat">
-          <p className="sidebar-two-p">Grow your network</p>
+          <p className="sidebar-text">Grow your network</p>
           <p className="sidebar-statNumber"></p>
         </div>
       </div>
@@ -53,9 +53,9 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="sidebar-stats-one">
-        <div className="sidebar-stat-one">
-          <p className="sidebar-one-p">My items</p>
+      <div className="sidebar-stats-text">
+        <div className="sidebar-stat-text">
+          <p className="sidebar-items">My items</p>
         </div>
       </div>
 
@@ -64,9 +64,9 @@ const Sidebar = () => {
         {recentItem("Event")}
         {recentItem("Followed Hashtag")}
       </div>
-      <div className="sidebar-stats-one">
-        <div className="sidebar-stat-one">
-          <p className="sidebar-p">Discover More</p>
+      <div className="sidebar-stats-text">
+        <div className="sidebar-stat-text">
+          <p className="sidebar-bottom-text" >Discover More</p>
         </div>
       </div>
     </div>

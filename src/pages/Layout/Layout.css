@@ -11,7 +11,7 @@
 .layout-left {
   display: flex;
 }
-.layout-left > a >img {
+.layout-left > a > img {
   object-fit: contain;
   height: 40px;
   margin-left: 170px;
@@ -20,23 +20,7 @@
 .layout-right {
   display: flex;
 }
-.sign-in {
-  width: 130px;
-  height: 50px;
-  padding: 11px;
-  color: #0a66c2;
-  margin-right: 140px;
-  background-color: white;
-  border: 1px solid #0a66c2;
-  border-radius: 25px;
-  font-weight: 600px;
-  font-size: 18px;
-  cursor: pointer;
-}
-.sign-in:hover {
-  background: #f0f8ff;
-}
-.join {
+.button-one {
   width: 120px;
   padding: 11px;
   margin-left: 5px;
@@ -49,10 +33,27 @@
   font-family: sans-serif;
   cursor: pointer;
 }
-.join:hover {
+.button-one:hover {
   background: #eeeeee;
 }
-.row {
+.button-two {
+  width: 130px;
+  height: 50px;
+  padding: 11px;
+  color: #0a66c2;
+  margin-right: 140px;
+  background-color: white;
+  border: 1px solid #0a66c2;
+  border-radius: 25px;
+  font-weight: 600px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.button-two:hover {
+  background: #f0f8ff;
+}
+
+.layout-row {
   width: 76%;
   margin: auto;
   display: flex;
@@ -61,26 +62,26 @@
   color: #8f5849;
   margin-top: 2%;
 }
-.row > h1 {
+.layout-row > h1 {
   display: flex;
   align-items: center;
   margin: 15px;
   font-size: 12px;
 }
-.content > h1 {
+.layout-content > h1 {
   font-size: 65px;
   margin-top: 20px;
   margin-bottom: 500px;
   font-weight: 150;
 }
-.form {
+.layout-form {
   display: flex;
   flex-direction: column;
   margin-left: 175px;
   position: absolute;
   top: 53%;
 }
-.form > input {
+.layout-form > input {
   width: 430px;
   height: 50px;
   font-size: 20px;
@@ -89,15 +90,15 @@
   border-radius: 5px;
   border: 1px solid lightgray;
 }
-.form > a {
+.layout-form > a {
   color: black;
   margin: 5px 0 30px;
   cursor: pointer;
 }
-.form > p {
+.layout-form > p {
   margin-top: 20px;
 }
-.btn-sign-In {
+.layout-button {
   width: 440px;
   height: 55px;
   font-size: large;
@@ -110,13 +111,13 @@
   font-family: inherit;
   border: 1px solid lightgray;
 }
-.form > button:hover {
+.layout-form > button:hover {
   background: #006097;
 }
-.img {
+.layout-img {
   width: 60%;
 }
-.img2 {
+.layout-img > img {
   max-width: 100%;
   height: auto;
   position: relative;

@@ -80,11 +80,11 @@ const Feed = () => {
         </div>
       </div>
       <div>
-        <hr className="hr-two" />
+        <hr className="feed-hr" />
       </div>
       {/* Posts */}
       <FlipMove>
-        {posts.map(({ id, data: { name, description, message, photoUrl} }) => {
+        {posts.map(({ id, data: { name, description, message, photoUrl } }) => {
           if (!!name) {
             return (
               <Post

@@ -15,17 +15,18 @@
   height: 35px;
   cursor: pointer;
 }
-.header-signIn {
+
+.login > h2 {
   text-align: center;
   font-size: 35px;
   font-weight: 500;
   margin: 0px 310px 10px 0px;
   cursor: pointer;
 }
-.header-h4 {
+.login > h4 {
   font-size: 16px;
   font-weight: 400;
-  margin-right: -30px;
+  margin-right: 100px;
 }
 
 .login > form {
@@ -42,11 +43,18 @@
   border-radius: 5px;
   border: 1px solid black;
 }
-
-.section > a {
-  text-decoration: none;
+.login > form > a {
+  position: relative;
+  top: -20px;
+  right: 92px;
+  cursor: pointer;
+  color: #0073b1;
+  font-weight: 700;
 }
-.btn-login {
+.login > form > a:hover {
+  text-decoration: underline;
+}
+.login-button {
   height: 55px;
   width: 320px;
   font-size: large;
@@ -57,59 +65,39 @@
   cursor: pointer;
   margin-left: -97px;
 }
-.btn-login:hover {
+.login-button:hover {
   background: #004182;
 }
-.form-link {
-  position: relative;
-  top: -20px;
-  right: 92px;
-  cursor: pointer;
-  color: #0073b1;
-  font-weight: 700;
-}
-.form-link:hover {
-  text-decoration: underline;
-}
-.section-2 {
+.login-text {
   text-align: center;
   margin: 15px 0px 0px -97px;
-  margin-top: 15px;
 }
-.section-2 > hr {
+.login-text > hr {
   margin-top: 10px;
 }
-.google-login {
-  margin-top: 20px;
+.login-google {
   cursor: pointer;
 }
-.member-p {
-  margin-left: -100px;
+.login-new {
+  margin-right: 100px;
 }
 .login-now {
   color: #0a66c2;
   cursor: pointer;
 }
-.login > p {
-  margin-top: 20px;
-}
-.link3 {
-  text-decoration: none;
-  color: #0a66c2;
-}
-.footer-login {
+.login-footer {
   text-align: center;
   position: absolute;
   bottom: 1%;
   font-size: 13.5px;
   margin-right: 90px;
 }
-.footer-login > img {
+.login-footer > img {
   width: 4.5%;
   position: relative;
   top: 3px;
 }
-.footer-login > a {
+.login-footer > a {
   text-decoration: none;
   margin: 0px 10px 0px 10px;
   color: black;

@@ -1,56 +1,89 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
-
+import { auth } from "../../utils/firebase";
+import { login } from "../../store/reducers/userSlice";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
+  const [email, SetEmail] = useState("");
+  const [password, SetPassword] = useState("");
+
+  const dispatch = useDispatch();
+
+  const loginToApp = (e) => {
+    e.preventDefault();
+  };
+
+  const register = () => {
+    auth
+      .createUserWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        console.log(userAuth);
+        userAuth.user.updateProfile({}).then(() => {
+          dispatch(
+            login({
+              email: userAuth.user.email,
+              uid: userAuth.user.uid,
+            })
+          );
+          // <Navigate to={"/home"} replace={true} />;
+        });
+      })
+      .catch((error) => alert(error));
+  };
   return (
     <>
       <div className="login">
         <a href="http://localhost:3001/login">
-        <img src="./Logo.png" alt="" />
+          <img src="./Logo.png" alt="" />
         </a>
-        <div>
-          <h2 className="header-signIn">Sign In</h2>
-          <h4 className="header-h4">
-            Get the latest news about your professional <br /> world.
-          </h4>
-        </div>
+        <h2>Sign In</h2>
+        <h4>
+          Get the latest news about your professional <br /> world.
+        </h4>
         <form>
-          <input placeholder="Email" type="email" />
-          <input placeholder="Password" type="password" />
-          <a className="form-link">Forgot your password?</a>
+          <input
+            placeholder="Email"
+            type="email"
+            value={email}
+            onChange={(e) => SetEmail(e.target.value)}
+          />
+          <input
+            placeholder="Password"
+            type="password"
+            value={password}
+            onChange={(e) => SetPassword(e.target.value)}
+          />
+          <a>Forgot your password?</a>
 
-          {/* <Link to="/home">   type= "submit yerine button oldu." */}
-          <button className="btn-login" type="submit">
+          {/*   type= "submit yerine button oldu."  */}
+          <button className="login-button" type="button" onClick={loginToApp}>
             Sign In
           </button>
-          {/* </Link> */}
-
-          <p className="section-2">
+          <p className="login-text">
             or
             <hr />
           </p>
         </form>
 
-        <div className="google-login-one">
+        <div className="login-google">
           <SignInGoogle />
         </div>
-
-        <p className="member-p">
+        <p className="login-new">
           New to LinkedIn? {""}
           <NavLink
-            to="/login"
+            to="/register"
             style={() => ({ color: "white", textDecoration: "none" })}
           >
-            <span className="login-now">Register Now</span>{" "}
+            <span className="login-now" onClick={register}>
+              Register Now
+            </span>
           </NavLink>
         </p>
-        {/* // eslint-disable-next-line jsx-a11y/anchor-has-content */}
-
-        <footer className="footer-login">
+        <footer className="login-footer">
           <img src="./Logo.png" alt="" />
           <a href=""> © 2022</a>
           <a href="">User Agreement</a>

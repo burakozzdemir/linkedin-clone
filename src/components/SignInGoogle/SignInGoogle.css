@@ -1,4 +1,4 @@
-.button {
+.sign-in-google {
   height: 48px;
   width: 320px;
   font-size: large;
@@ -11,10 +11,10 @@
   cursor: pointer;
   margin-left: -100px;
 }
-.button:hover {
+.sign-in-google:hover {
   background: whitesmoke;
 }
-.button > img {
+.sign-in-google > img {
   width: 6%;
   margin-bottom: -4px;
   margin-right: 7px;
