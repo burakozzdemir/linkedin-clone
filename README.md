@@ -6,7 +6,7 @@
 - [React-Redux] - Redux is an open-source JavaScript library for managing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
 - [React-ReduxJs/Toolkit] - Redux Toolkit is an official, opinionated, batteries-included toolset for efficient Redux development.
 - [React-Router-v6] - React Router is a standard library for routing in React.
-- [Node.js] - evented I/O for the backend.
+- [Node.js] - Evented I/O for the backend.
 - [Firebase] - App development platform that helps you build and grow apps and games users love.
 - [Material-UI] - Material-UI is an open-source project that features React components that implement Google's Material Design.
 - [Visual-Studio] -Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.

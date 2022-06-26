@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar-top">
-        <img src="./bg.png" alt="" />
+        <img src="./sidebar-bg.png" alt="" />
         <Avatar
           src={user?.photoUrl}
           style={{ width: "70px", height: "70px" }}

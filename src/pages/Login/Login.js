@@ -38,7 +38,7 @@ const Login = () => {
     <>
       <div className="login">
         <a href="http://localhost:3001/login">
-          <img src="./Logo.png" alt="" />
+          <img src="./linkedin-logo.png" alt="" />
         </a>
         <h2>Sign In</h2>
         <h4>
@@ -84,7 +84,7 @@ const Login = () => {
           </NavLink>
         </p>
         <footer className="login-footer">
-          <img src="./Logo.png" alt="" />
+          <img src="./linkedin-logo.png" alt="" />
           <a href=""> © 2022</a>
           <a href="">User Agreement</a>
           <a href="">Privacy Policy</a>

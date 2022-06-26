@@ -20,7 +20,7 @@ const SignInGoogle = () => {
     <div>
       <NavLink to="/home">
         <button className="sign-in-google" onClick={SignInWithFirebase}>
-          <img src="./Google.png" alt="" /> Continue with Google
+          <img src="./google-logo.png" alt="" /> Continue with Google
         </button>
       </NavLink>
     </div>

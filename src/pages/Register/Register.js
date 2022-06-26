@@ -52,7 +52,7 @@ const Register = () => {
   return (
     <div className="register">
       <a href="http://localhost:3001/register">
-        <img src="./Logo.png" alt="" />
+        <img src="./linkedin-logo.png" alt="" />
       </a>
       <h2>Get the most out of your professional life</h2>
       <div className="register-form">
@@ -148,7 +148,7 @@ const Register = () => {
         </p>
       </div>
       <footer className="register-footer">
-        <img src="./Logo.png" alt="" />
+        <img src="./linkedin-logo.png" alt="" />
         <a href=""> © 2022</a>
         <a href="">About Us</a>
         <a href="">Accessibility</a>

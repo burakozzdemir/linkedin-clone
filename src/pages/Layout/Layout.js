@@ -14,7 +14,7 @@ const Layout = () => {
       <div className="layout">
         <div className="layout-left">
           <a href="http://localhost:3001/layout">
-            <img src="./Logo.png" alt="" />
+            <img src="./linkedin-logo.png" alt="" />
           </a>
         </div>
         <div className="layout-right">
