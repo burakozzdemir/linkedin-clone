@@ -4,9 +4,8 @@ import "./Login.css";
 import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import { auth } from "../../utils/firebase";
-import { login } from "../../store/reducers/userSlice";
 import { useDispatch, useSelector } from "react-redux";
-import { selectUser } from "../../store/reducers/userSlice";
+import { login, selectUser } from "../../store/userSlice";
 
 const Login = () => {
   const [email, SetEmail] = useState("");
@@ -19,6 +18,20 @@ const Login = () => {
 
   const loginToApp = (e) => {
     e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        dispatch(
+          login({
+            email: userAuth.user.email,
+            uid: userAuth.user.uid,
+            displayName: userAuth.user.displayName,
+            profileUrl: userAuth.user.photoURL,
+          })
+        );
+      })
+      .catch((error) => alert(error));
   };
 
   const register = () => {
@@ -33,7 +46,6 @@ const Login = () => {
               uid: userAuth.user.uid,
             })
           );
-          // <Navigate to={"/home"} replace={true} />;
         });
       })
       .catch((error) => alert(error));
@@ -41,7 +53,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <a href="http://localhost:3001/login">
+        <a href="http://localhost:3000/login">
           <img src="./linkedin-logo.png" alt="" />
         </a>
         <h2>Sign In</h2>
@@ -62,10 +74,8 @@ const Login = () => {
             onChange={(e) => SetPassword(e.target.value)}
           />
           <a>Forgot your password?</a>
-
-          {/*   type= "submit yerine button oldu."  */}
           <NavLink to="/home">
-            <button className="login-button" type="button" onClick={loginToApp}>
+            <button className="login-button" type="submit" onClick={loginToApp}>
               Sign In
             </button>
           </NavLink>
@@ -74,7 +84,6 @@ const Login = () => {
             <hr />
           </p>
         </form>
-
         <div className="login-google">
           <SignInGoogle />
         </div>

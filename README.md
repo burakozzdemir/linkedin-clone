@@ -72,7 +72,15 @@
 - Login
 - Logout
 
-#### 7.Setup React Router v6
+#### 7.Setup ReduxJsToolkit
+
+- Update;
+```sh
+- Login
+- Logout
+```
+
+#### 8.Setup React Router v6
 
 - Create different 4 pages
 

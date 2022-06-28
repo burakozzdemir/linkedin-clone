@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { auth } from "../../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { login, selectUser } from "../../store/reducers/userSlice";
+import { login, selectUser } from "../../store/userSlice";
 import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import "./Register.css";
@@ -20,6 +20,20 @@ const Register = () => {
 
   const loginToApp = (e) => {
     e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        dispatch(
+          login({
+            email: userAuth.user.email,
+            uid: userAuth.user.uid,
+            displayName: userAuth.user.displayName,
+            profileUrl: userAuth.user.photoURL,
+          })
+        );
+      })
+      .catch((error) => alert(error));
   };
 
   const register = () => {
@@ -30,7 +44,6 @@ const Register = () => {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((userAuth) => {
-        console.log(userAuth);
         userAuth.user
           .updateProfile({
             displayName: name,
@@ -42,11 +55,9 @@ const Register = () => {
                 email: userAuth.user.email,
                 uid: userAuth.user.uid,
                 displayName: name,
-                photoURL: profilePic,
+                photoUrl: profilePic,
               })
             );
-            console.log("test");
-            // <Navigate to={"/home"} replace={true} />;
           });
       })
       .catch((error) => alert(error));
@@ -54,7 +65,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <a href="http://localhost:3001/register">
+      <a href="http://localhost:3000/register">
         <img src="./linkedin-logo.png" alt="" />
       </a>
       <h2>Get the most out of your professional life</h2>
@@ -113,7 +124,11 @@ const Register = () => {
               </a>
             </p>
           </div>
-          <button className="register-button" type="button" onClick={register}>
+          <button
+            className="register-button"
+            type="submit"
+            onClick={loginToApp}
+          >
             Accept or Join
           </button>
           <span className="register-span">or</span>
@@ -129,7 +144,7 @@ const Register = () => {
               to="/login"
               style={() => ({ color: "white", textDecoration: "none" })}
             >
-              <span className="register-now" onClick={loginToApp}>
+              <span className="register-now" onClick={register}>
                 Register Now
               </span>
             </NavLink>

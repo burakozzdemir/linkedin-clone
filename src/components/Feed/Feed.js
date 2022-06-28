@@ -9,7 +9,7 @@ import Post from "../Post/Post";
 import { db } from "../../utils/firebase";
 import firebase from "firebase";
 import { useSelector } from "react-redux";
-import { selectUser } from "../../store/reducers/userSlice";
+import { selectUser } from "../../store/userSlice";
 import FlipMove from "react-flip-move";
 import { Avatar } from "@material-ui/core";
 

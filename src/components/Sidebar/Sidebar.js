@@ -1,7 +1,7 @@
 import React from "react";
 import "./Sidebar.css";
 import { useSelector } from "react-redux";
-import { selectUser } from "../../store/reducers/userSlice";
+import { selectUser } from "../../store/userSlice";
 import { Avatar } from "@material-ui/core";
 
 const Sidebar = () => {
@@ -17,14 +17,14 @@ const Sidebar = () => {
       <div className="sidebar-top">
         <img src="./sidebar-bg.png" alt="" />
         <Avatar
-          src={user?.photoUrl}
+          src={user.photoUrl}
           style={{ width: "70px", height: "70px" }}
           className="sidebar-avatar"
         >
-          {user?.email[0]}{" "}
+          {user.email[0]}{" "}
         </Avatar>
-        <h2>{user?.displayName}</h2>
-        {/* <h4>{user?.email} </h4> */}
+        <h2>{user.displayName}</h2>
+        {/* <h4>{user.email} </h4> */}
         <h4>Front End Developer</h4>
       </div>
 
