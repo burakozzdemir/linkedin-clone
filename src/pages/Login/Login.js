@@ -5,11 +5,15 @@ import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import { auth } from "../../utils/firebase";
 import { login } from "../../store/reducers/userSlice";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { selectUser } from "../../store/reducers/userSlice";
 
 const Login = () => {
   const [email, SetEmail] = useState("");
   const [password, SetPassword] = useState("");
+
+  // eslint-disable-next-line no-unused-vars
+  const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
 
@@ -60,9 +64,11 @@ const Login = () => {
           <a>Forgot your password?</a>
 
           {/*   type= "submit yerine button oldu."  */}
-          <button className="login-button" type="button" onClick={loginToApp}>
-            Sign In
-          </button>
+          <NavLink to="/home">
+            <button className="login-button" type="button" onClick={loginToApp}>
+              Sign In
+            </button>
+          </NavLink>
           <p className="login-text">
             or
             <hr />

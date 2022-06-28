@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { auth } from "../../utils/firebase";
-import { useDispatch } from "react-redux";
-import { login } from "../../store/reducers/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { login, selectUser } from "../../store/reducers/userSlice";
 import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import "./Register.css";
@@ -12,6 +12,9 @@ const Register = () => {
   const [password, SetPassword] = useState("");
   const [name, SetName] = useState("");
   const [profilePic, SetprofilePic] = useState("");
+
+  // eslint-disable-next-line no-unused-vars
+  const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
 
@@ -42,7 +45,7 @@ const Register = () => {
                 photoURL: profilePic,
               })
             );
-            console.log('test');
+            console.log("test");
             // <Navigate to={"/home"} replace={true} />;
           });
       })
@@ -110,11 +113,7 @@ const Register = () => {
               </a>
             </p>
           </div>
-          <button
-            className="register-button"
-            type="button"
-            onClick={register}
-          >
+          <button className="register-button" type="button" onClick={register}>
             Accept or Join
           </button>
           <span className="register-span">or</span>

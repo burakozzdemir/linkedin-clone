@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 const Logout = () => {
   // eslint-disable-next-line no-unused-vars
-  const user = useSelector(selectUser);
+   const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
 
@@ -19,9 +19,9 @@ const Logout = () => {
   return (
     <div>
       <>
-        <NavLink to="/login">
+        {/* <NavLink to="/login"> */}
           <HeaderOption avatar={true} onClick={logoutOfApp} />
-        </NavLink>
+        {/* </NavLink> */}
       </>
     </div>
   );

@@ -64,6 +64,9 @@
   border: 1px solid lightgray;
   cursor: pointer;
   margin-left: -97px;
+  position: relative;
+  left: 90px;
+  bottom: -20px;
 }
 .login-button:hover {
   background: #004182;

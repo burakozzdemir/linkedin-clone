@@ -13,7 +13,7 @@ const Layout = () => {
     <>
       <div className="layout">
         <div className="layout-left">
-          <a href="http://localhost:3001/layout">
+          <a href="http://localhost:3000">
             <img src="./linkedin-logo.png" alt="" />
           </a>
         </div>
