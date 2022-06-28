@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
@@ -7,8 +7,37 @@ import SchoolIcon from "@material-ui/icons/School";
 import ExploreIcon from "@material-ui/icons/Explore";
 import HeaderOption from "../../components/HeaderOption/HeaderOption";
 import "./Layout.css";
+import { login, selectUser } from "../../store/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { auth } from "../../utils/firebase";
 
 const Layout = () => {
+  const [email, SetEmail] = useState("");
+  const [password, SetPassword] = useState("");
+
+  // eslint-disable-next-line no-unused-vars
+  const user = useSelector(selectUser);
+
+  const dispatch = useDispatch();
+
+  const loginToApp = (e) => {
+    e.preventDefault();
+
+    auth
+      .signInWithEmailAndPassword(email, password)
+      .then((userAuth) => {
+        dispatch(
+          login({
+            email: userAuth.user.email,
+            uid: userAuth.user.uid,
+            displayName: userAuth.user.displayName,
+            profileUrl: userAuth.user.photoURL,
+          })
+        );
+      })
+      .catch((error) => alert(error));
+  };
+
   return (
     <>
       <div className="layout">
@@ -51,12 +80,22 @@ const Layout = () => {
 
       <div>
         <form className="layout-form">
-          <input type="text" placeholder="E-mail or phone number"></input>
-          <input type="text" placeholder="Password"></input>
+          <input
+            type="email"
+            placeholder="E-mail or phone number"
+            onChange={(e) => SetEmail(e.target.value)}
+          ></input>
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => SetPassword(e.target.value)}
+          ></input>
           <a>Forgot your password?</a>
 
-          <NavLink to="/login">
-            <button className="layout-button">Sign In</button>
+          <NavLink to="/home">
+            <button className="layout-button" onClick={loginToApp}>
+              Sign In
+            </button>
           </NavLink>
         </form>
       </div>

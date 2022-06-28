@@ -34,22 +34,6 @@ const Login = () => {
       .catch((error) => alert(error));
   };
 
-  const register = () => {
-    auth
-      .createUserWithEmailAndPassword(email, password)
-      .then((userAuth) => {
-        console.log(userAuth);
-        userAuth.user.updateProfile({}).then(() => {
-          dispatch(
-            login({
-              email: userAuth.user.email,
-              uid: userAuth.user.uid,
-            })
-          );
-        });
-      })
-      .catch((error) => alert(error));
-  };
   return (
     <>
       <div className="login">
@@ -93,7 +77,7 @@ const Login = () => {
             to="/register"
             style={() => ({ color: "white", textDecoration: "none" })}
           >
-            <span className="login-now" onClick={register}>
+            <span className="login-now" >
               Register Now
             </span>
           </NavLink>

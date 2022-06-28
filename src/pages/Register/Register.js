@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { auth } from "../../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../../store/userSlice";
-import { NavLink } from "react-router-dom";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import "./Register.css";
 
@@ -140,14 +139,9 @@ const Register = () => {
         <div>
           <p className="register-member">
             Already member of LinkedIn?{" "}
-            <NavLink
-              to="/login"
-              style={() => ({ color: "white", textDecoration: "none" })}
-            >
-              <span className="register-now" onClick={register}>
-                Register Now
-              </span>
-            </NavLink>
+            <span className="register-now" onClick={register}>
+              Register Now
+            </span>
           </p>
         </div>
         <p className="register-create">
