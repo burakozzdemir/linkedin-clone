@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <a href="http://localhost:3000/login">
+        <a href="https://linkedin-clone-16793.web.app/login">
           <img src="./linkedin-logo.png" alt="" />
         </a>
         <h2>Sign In</h2>

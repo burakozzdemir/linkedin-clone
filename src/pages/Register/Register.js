@@ -64,7 +64,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <a href="http://localhost:3000/register">
+      <a href="https://linkedin-clone-16793.web.app/register">
         <img src="./linkedin-logo.png" alt="" />
       </a>
       <h2>Get the most out of your professional life</h2>

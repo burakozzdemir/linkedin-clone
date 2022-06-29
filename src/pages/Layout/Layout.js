@@ -42,7 +42,7 @@ const Layout = () => {
     <>
       <div className="layout">
         <div className="layout-left">
-          <a href="http://localhost:3000">
+          <a href="https://linkedin-clone-16793.web.app/">
             <img src="./linkedin-logo.png" alt="" />
           </a>
         </div>
