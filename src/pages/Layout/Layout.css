@@ -111,7 +111,7 @@
   font-family: inherit;
   border: 1px solid lightgray;
 }
-.layout-form > button:hover {
+.layout-button:hover {
   background: #006097;
 }
 .layout-img {
@@ -121,7 +121,7 @@
   max-width: 100%;
   height: auto;
   position: relative;
-  bottom: 45px;
-  margin-left: 173px;
+  bottom: 65px;
+  margin-left: 190px;
   margin-bottom: 30px;
 }
