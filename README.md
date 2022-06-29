@@ -15,6 +15,7 @@
 
 - Post functionality
 - Login using Google (Firebase Authentication)
+- Single Page Application
 - Create a new post with animated
 - Realtime update posts
 - Auto authenticate user on refresh
@@ -23,7 +24,7 @@
 - Log Out
 - Clone this repo
 
-### How to build ?
+### How to build?
 
 #### 1.Clone this repo
 
