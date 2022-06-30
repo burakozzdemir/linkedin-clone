@@ -99,12 +99,13 @@
 .register-member {
   position: absolute;
   bottom: 17%;
-  right: 39%;
+  right: 40.5%;
 }
-.register-now {
+.sign-in {
   color: #0177b7;
   cursor: pointer;
   font-weight: 600;
+  text-decoration: none;
 }
 .register-create {
   position: absolute;

@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../../store/userSlice";
 import SignInGoogle from "../../components/SignInGoogle/SignInGoogle";
 import "./Register.css";
+import { NavLink } from "react-router-dom";
 
 const Register = () => {
   const [email, SetEmail] = useState("");
@@ -17,9 +18,51 @@ const Register = () => {
 
   const dispatch = useDispatch();
 
-  const loginToApp = (e) => {
-    e.preventDefault();
+  // const loginToApp = (e) => {
+  //   e.preventDefault();
 
+  //   auth
+  //     .signInWithEmailAndPassword(email, password)
+  //     .then((userAuth) => {
+  //       dispatch(
+  //         login({
+  //           email: userAuth.user.email,
+  //           uid: userAuth.user.uid,
+  //           displayName: userAuth.user.displayName,
+  //           profileUrl: userAuth.user.photoURL,
+  //         })
+  //       );
+  //     })
+  //     .catch((error) => alert(error));
+  // };
+
+  // const register = () => {
+  //   if (!name) {
+  //     return alert("Please enter a full name!");
+  //   }
+
+  //   auth
+  //     .createUserWithEmailAndPassword(email, password)
+  //     .then((userAuth) => {
+  //       userAuth.user
+  //         .updateProfile({
+  //           displayName: name,
+  //           photoURL: profilePic,
+  //         })
+  //         .then(() => {
+  //           dispatch(
+  //             login({
+  //               email: userAuth.user.email,
+  //               uid: userAuth.user.uid,
+  //               displayName: name,
+  //               photoUrl: profilePic,
+  //             })
+  //           );
+  //         });
+  //     })
+  //     .catch((error) => alert(error));
+  // };
+  const signIn = () => {
     auth
       .signInWithEmailAndPassword(email, password)
       .then((userAuth) => {
@@ -35,7 +78,9 @@ const Register = () => {
       .catch((error) => alert(error));
   };
 
-  const register = () => {
+  const loginToApp = (e) => {
+    e.preventDefault();
+
     if (!name) {
       return alert("Please enter a full name!");
     }
@@ -139,9 +184,11 @@ const Register = () => {
         <div>
           <p className="register-member">
             Already member of LinkedIn?{" "}
-            <span className="register-now" onClick={register}>
-              Register Now
-            </span>
+            <NavLink to="/login" style={{ textDecoration: "none" }}>
+              <span className="sign-in" onClick={signIn}>
+                Sign In
+              </span>
+            </NavLink>
           </p>
         </div>
         <p className="register-create">
