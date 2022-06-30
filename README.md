@@ -1,4 +1,5 @@
-# [DEMO](http://localhost:3000)
+# LinkedIn Clone
+# [LIVE](https://linkedin-clone-16793.web.app/)
 
 # Tech
 
