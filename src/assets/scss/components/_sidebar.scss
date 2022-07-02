@@ -1,0 +1,141 @@
+.sidebar {
+    position: sticky;
+    top: 82px;
+    flex: 0.2;
+    border-radius: 10px;
+    text-align: center;
+    height: fit-content;
+  }
+  
+  .sidebar-avatar {
+    position: relative;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  .sidebar-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+  .sidebar-top > h4 {
+    color: gray;
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  .sidebar-top > h2 {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .sidebar-top > img {
+    margin-bottom: -20px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+  }
+  .sidebar-stat {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar-stat > p {
+    color: gray;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+  }
+  .sidebar-stat > a {
+    text-decoration: none;
+    font-size: 12px;
+    margin-top: 5px;
+    color: black;
+    font-weight: bold;
+    margin-left: 25px;
+    position: relative;
+    bottom: 13px;
+  }
+  .sidebar-stat > a:hover {
+    color: blue;
+  }
+  .sidebar-stats {
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+  }
+  .sidebar-stats:hover {
+    background: lightgray;
+  }
+  .sidebar-statNumber {
+    font-weight: bold;
+    color: #0a66c2 !important;
+  }
+  .sidebar-bottom {
+    text-align: left;
+    padding: 10px;
+    margin-top: 7px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .sidebar-recentItem {
+    display: flex;
+    font-size: 13px;
+    color: #0a66c2;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  .sidebar-recentItem:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .sidebar-text {
+    position: relative;
+    bottom: 8px;
+  }
+  .sidebar-stats-text {
+    padding: 10px;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .sidebar-stat-text > p {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+    cursor: pointer;
+  }
+  .sidebar-items {
+    position: relative;
+    bottom: 5px;
+    left: 25px;
+  }
+  .sidebar-stats-text:hover {
+    background: lightgray;
+  }
+  .sidebar-bottom-text {
+    margin-left: 50px;
+    color: gray;
+    position: relative;
+    bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  

@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import "./assets/css/App.css";
+import "./App.css";
 import View from "./router/View";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./store/userSlice";
 import { auth } from "./utils/firebase";
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 
 const App = () => {
   // eslint-disable-next-line no-unused-vars
