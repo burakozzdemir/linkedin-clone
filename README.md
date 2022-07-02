@@ -9,6 +9,7 @@
 - [React-Router-v6] - React Router is a standard library for routing in React.
 - [Node.js] - Evented I/O for the backend.
 - [Firebase] - App development platform that helps you build and grow apps and games users love.
+- [SASS] - Sass is an extension of CSS that enables you to use things like variables, nested rules, inline imports, and more.
 - [Material-UI] - Material-UI is an open-source project that features React components that implement Google's Material Design.
 - [Visual-Studio] -Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
