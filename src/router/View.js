@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Layout from "../pages/Layout/Layout";
-import Login from "../pages/Login/Login";
-import Register from "../pages/Register/Register";
+import Layout from "../pages/Layout";
+import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const View = () => {
   return (
