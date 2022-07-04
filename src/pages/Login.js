@@ -37,7 +37,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <a href="https://linkedin-clone-16793.web.app/login">
+        <a href="https://linkedin-clone-iota-umber.vercel.app/login">
           <img src={logo} alt="" />
         </a>
         <h2>Sign In</h2>

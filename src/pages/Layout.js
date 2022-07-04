@@ -42,7 +42,7 @@ const Layout = () => {
     <>
       <div className="layout">
         <div className="layout-left">
-          <a href="https://linkedin-clone-16793.web.app/">
+          <a href="https://linkedin-clone-iota-umber.vercel.app/">
             <img src={logo} alt="" />
           </a>
         </div>
