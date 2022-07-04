@@ -1,5 +1,5 @@
 # LinkedIn Clone
-# [LIVE](https://linkedin-clone-16793.web.app/)
+# [LIVE](https://linkedin-clone-iota-umber.vercel.app/)
 
 # Tech
 
