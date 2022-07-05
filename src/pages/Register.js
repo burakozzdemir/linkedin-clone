@@ -5,8 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../store/userSlice";
 import SignInGoogle from "../components/SignInGoogle";
 import { NavLink } from "react-router-dom";
-import logo from "../assets/images/linkedin-logo.png"
-
+import logo from "../assets/images/linkedin-logo.png";
 
 const Register = () => {
   const [email, SetEmail] = useState("");
@@ -18,22 +17,6 @@ const Register = () => {
   const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
-
-  const signIn = () => {
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .then((userAuth) => {
-        dispatch(
-          login({
-            email: userAuth.user.email,
-            uid: userAuth.user.uid,
-            displayName: userAuth.user.displayName,
-            profileUrl: userAuth.user.photoURL,
-          })
-        );
-      })
-      .catch((error) => alert(error));
-  };
 
   const loginToApp = (e) => {
     e.preventDefault();
@@ -142,9 +125,7 @@ const Register = () => {
           <p className="register-member">
             Already member of LinkedIn?{" "}
             <NavLink to="/login" style={{ textDecoration: "none" }}>
-              <span className="sign-in" onClick={signIn}>
-                Sign In
-              </span>
+              <span className="sign-in">Sign In</span>
             </NavLink>
           </p>
         </div>
