@@ -125,7 +125,7 @@ const Register = () => {
           <p className="register-member">
             Already member of LinkedIn?{" "}
             <NavLink to="/login" style={{ textDecoration: "none" }}>
-              <span className="sign-in">Sign In</span>
+              <span className="register-sign-in">Sign In</span>
             </NavLink>
           </p>
         </div>
