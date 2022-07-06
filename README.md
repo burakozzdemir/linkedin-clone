@@ -33,7 +33,7 @@
 #### 2.Install all the dependencies
 
 ```sh
-  yarn i
+  npm i
 ```
 
 #### 3.Setup Firebase
@@ -46,28 +46,28 @@
 #### 4.Let's build the optimized version
 
 ```sh
-  yarn run build
+  npm run build
 ```
 
-#### 5.Integrating Firebase
+#### 5.Integrating Vercel
 
-- Install Firebase CLI
-- Login to Firebase
+- Install Vercel CLI
+- Login to Vercel
 
 ```sh
-  firebase login
+  vercel login
 ```
 
-- Initialize Firebase
+- Initialize Vercel
 
 ```sh
-  firebase init
+  Vercel Github
 ```
 
 - Deploy clone and make it live
 
 ```sh
-  firebase deploy
+  versel deploy
 ```
 
 #### 6.Setup ReduxJsToolkit
