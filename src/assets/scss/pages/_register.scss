@@ -1,11 +1,11 @@
 .register {
-    display: grid;
-    place-items: center;
-    margin: 0px auto 0px auto;
-    padding: 100px 0 100px 0;
-    background: whitesmoke;
-  }
-  .register > a > img {
+  display: grid;
+  place-items: center;
+  margin: 0px auto0px auto;
+  padding: 100px 0 100px 0;
+  background: whitesmoke;
+
+  & > a > img {
     object-fit: contain;
     height: 80px;
     margin: 15px 0px 0px 90px;
@@ -15,7 +15,7 @@
     height: 40px;
     cursor: pointer;
   }
-  .register > h2 {
+  & > h2 {
     text-align: center;
     background: whitesmoke;
     font-size: 35px;
@@ -23,45 +23,47 @@
     position: absolute;
     top: 80px;
   }
-  .register-form {
+  &-form {
     background: white;
     width: 400px;
     height: 450px;
     border-radius: 10px;
     margin-top: 47px;
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 18%;
+      left: 36%;
+      align-items: center;
+    }
+    & > form > input {
+      width: 350px;
+      height: 35px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      font-size: 20px;
+      padding-left: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      position: relative;
+      top: 40px;
+    }
   }
-  .register-form > form {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 18%;
-    left: 36%;
-    align-items: center;
-  }
-  .register-form > form > input {
-    width: 350px;
-    height: 35px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    font-size: 20px;
-    padding-left: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-    position: relative;
-    top: 40px;
-  }
-  .register-text {
+  &-text {
     text-align: center;
     font-size: 14px;
     position: relative;
     right: -3%;
     bottom: -50px;
+
+    & > a {
+      text-decoration: none;
+      color: #0a66c2;
+    }
   }
-  .register-text > a {
-    text-decoration: none;
-    color: #0a66c2;
-  }
-  .register-button {
+  &-button {
     width: 346px;
     height: 48px;
     font-size: large;
@@ -73,65 +75,70 @@
     position: absolute;
     bottom: -49%;
     right: 2%;
+
+    &:hover {
+      background: #0a56c2;
+    }
   }
-  .register-button:hover {
-    background: #0a56c2;
-  }
-  .register-span {
+  &-span {
     text-align: center;
     position: absolute;
     bottom: -130px;
     left: 51%;
     margin-top: 15px;
+
+    &-hr {
+      width: 280px;
+      margin-left: 22px;
+      border: 1px solid lightgray;
+      position: relative;
+      top: 141px;
+    }
   }
-  .register-span-hr {
-    width: 280px;
-    margin-left: 22px;
-    border: 1px solid lightgray;
-    position: relative;
-    top: 141px;
-  }
-  .register-google {
+  &-google {
     position: absolute;
     bottom: 18%;
     right: 38.7%;
   }
-  .register-member {
+  &-member {
     position: absolute;
     bottom: 17%;
     right: 40.5%;
   }
-  .sign-in {
+  &-sign-in {
     color: #0177b7;
     cursor: pointer;
     font-weight: 600;
     text-decoration: none;
   }
-  .register-create {
+
+  &-create {
     position: absolute;
     bottom: 9%;
     right: 38%;
+
+    & > a {
+      font-weight: 600;
+      color: #0177b7;
+      text-decoration: none;
+    }
   }
-  .register-create > a {
-    font-weight: 600;
-    color: #0177b7;
-    text-decoration: none;
-  }
-  .register-footer {
+  &-footer {
     text-align: center;
     position: absolute;
     bottom: 0.3%;
     font-size: 13.5px;
+
+    & > img {
+      width: 4.5%;
+      position: relative;
+      top: 3px;
+    }
+    & > a {
+      text-decoration: none;
+      margin: 0px 10px 0px 10px;
+      color: black;
+      font-family: sans-serif;
+    }
   }
-  .register-footer > img {
-    width: 4.5%;
-    position: relative;
-    top: 3px;
-  }
-  .register-footer > a {
-    text-decoration: none;
-    margin: 0px 10px 0px 10px;
-    color: black;
-    font-family: sans-serif;
-  }
-  
+}

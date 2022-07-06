@@ -1,5 +1,4 @@
 import React from "react";
-// import "./HeaderOption.css";
 import { useSelector } from "react-redux";
 import { selectUser } from "../store/userSlice";
 import { Avatar } from "@material-ui/core";

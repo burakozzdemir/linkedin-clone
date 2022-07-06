@@ -1,29 +1,28 @@
 .header {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.1px solid lightgray;
-    padding: 5px 0px 5px;
-    width: 100%;
-    z-index: 999;
-  }
-  
-  .header-left {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1px solid lightgray;
+  padding: 5px 0px 5px;
+  width: 100%;
+  z-index: 999;
+
+  &-left {
     display: flex;
     margin-left: 155px;
     margin-top: 5px;
   }
-  
-  .header-left-img {
+  &-left-img {
     object-fit: contain;
     width: 35px;
     height: 33px;
     cursor: pointer;
     margin-top: 0.5px;
   }
-  .header-search {
+
+  &-search {
     padding: 8px;
     display: flex;
     align-items: center;
@@ -32,41 +31,43 @@
     color: gray;
     background-color: #ececec;
     margin-left: 10px;
+
+    & > input {
+      outline: none;
+      border: none;
+      background: none;
+      font-size: 14px;
+      padding: 50px;
+      position: relative;
+      right: 50px;
+    }
   }
-  
-  .header-search > input {
-    outline: none;
-    border: none;
-    background: none;
-    font-size: 14px;
-    padding: 50px;
-    position: relative;
-    right: 50px;
-  }
-  
-  .header-right {
+
+  &-right {
     display: flex;
     margin-right: 173px;
+
+    & > a {
+      text-decoration: none;
+      font-size: 12px;
+      margin-top: 5px;
+      color: rgb(170, 44, 44);
+      font-weight: 400;
+    }
+    & > a:hover {
+      text-decoration: underline;
+    }
   }
-  .header-hr {
-    margin-right: 20px;
-    border: 0.4px solid lightgray;
-  }
-  .header-right > a {
-    text-decoration: none;
-    font-size: 12px;
-    margin-top: 5px;
-    color: rgb(170, 44, 44);
-    font-weight: 400;
-  }
-  .header-right > a:hover {
-    text-decoration: underline;
-  }
-  .header-link {
+
+  &-link {
     margin-left: 30px;
     text-decoration: none;
     color: rgb(170, 44, 44);
     position: relative;
     top: 5px;
   }
-  
+  &-hr {
+    margin-right: 20px;
+    border: 0.4px solid lightgray;
+  }
+}

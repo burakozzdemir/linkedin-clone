@@ -1,26 +1,29 @@
 .layout {
-    position: sticky;
-    top: 0;
-    background-color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  z-index: 999;
+
+  &-left {
     display: flex;
-    justify-content: space-between;
-    padding: 10px 0px 10px 0px;
-    width: 100%;
-    z-index: 999;
+
+    & > a > img {
+      object-fit: contain;
+      height: 40px;
+      margin-left: 170px;
+      cursor: pointer;
+    }
   }
-  .layout-left {
+
+  &-right {
     display: flex;
   }
-  .layout-left > a > img {
-    object-fit: contain;
-    height: 40px;
-    margin-left: 170px;
-    cursor: pointer;
-  }
-  .layout-right {
-    display: flex;
-  }
-  .button-one {
+
+  &-button-one {
     width: 120px;
     padding: 11px;
     margin-left: 5px;
@@ -32,11 +35,12 @@
     font-size: 19px;
     font-family: sans-serif;
     cursor: pointer;
+
+    &:hover {
+      background: #eeeeee;
+    }
   }
-  .button-one:hover {
-    background: #eeeeee;
-  }
-  .button-two {
+  &-button-two {
     width: 130px;
     height: 50px;
     padding: 11px;
@@ -48,12 +52,12 @@
     font-weight: 600px;
     font-size: 18px;
     cursor: pointer;
+
+    &:hover {
+      background: #f0f8ff;
+    }
   }
-  .button-two:hover {
-    background: #f0f8ff;
-  }
-  
-  .layout-row {
+  &-row {
     width: 76%;
     margin: auto;
     display: flex;
@@ -61,44 +65,47 @@
     justify-content: space-between;
     color: #8f5849;
     margin-top: 2%;
+
+    & > h1 {
+      display: flex;
+      align-items: center;
+      margin: 15px;
+      font-size: 12px;
+    }
   }
-  .layout-row > h1 {
-    display: flex;
-    align-items: center;
-    margin: 15px;
-    font-size: 12px;
-  }
-  .layout-content > h1 {
+  &-content > h1 {
     font-size: 65px;
     margin-top: 20px;
     margin-bottom: 500px;
     font-weight: 150;
   }
-  .layout-form {
+
+  &-form {
     display: flex;
     flex-direction: column;
     margin-left: 175px;
     position: absolute;
     top: 53%;
+
+    & > input {
+      width: 430px;
+      height: 50px;
+      font-size: 20px;
+      padding-left: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+    }
+    & > a {
+      color: black;
+      margin: 5px 0 30px;
+      cursor: pointer;
+    }
+    & > p {
+      margin-top: 20px;
+    }
   }
-  .layout-form > input {
-    width: 430px;
-    height: 50px;
-    font-size: 20px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-  }
-  .layout-form > a {
-    color: black;
-    margin: 5px 0 30px;
-    cursor: pointer;
-  }
-  .layout-form > p {
-    margin-top: 20px;
-  }
-  .layout-button {
+  &-button {
     width: 440px;
     height: 55px;
     font-size: large;
@@ -110,19 +117,21 @@
     font-weight: normal;
     font-family: inherit;
     border: 1px solid lightgray;
+
+    &:hover {
+      background: #006097;
+    }
   }
-  .layout-button:hover {
-    background: #006097;
-  }
-  .layout-img {
+  &-img {
     width: 60%;
+
+    & > img {
+      max-width: 100%;
+      height: auto;
+      position: relative;
+      bottom: 65px;
+      margin-left: 190px;
+      margin-bottom: 30px;
+    }
   }
-  .layout-img > img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-    bottom: 65px;
-    margin-left: 190px;
-    margin-bottom: 30px;
-  }
-  
+}

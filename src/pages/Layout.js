@@ -53,11 +53,11 @@ const Layout = () => {
           <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
           <hr />
           <Link to="/register">
-            <button className="button-one">Join now</button>
+            <button className="layout-button-one">Join now</button>
           </Link>
 
           <Link to="/login">
-            <button className="button-two">Sign In</button>
+            <button className="layout-button-two">Sign In</button>
           </Link>
         </div>
       </div>
