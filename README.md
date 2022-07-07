@@ -67,7 +67,7 @@
 - Deploy clone and make it live
 
 ```sh
-  versel deploy
+  vercel deploy
 ```
 
 #### 6.Setup ReduxJsToolkit
