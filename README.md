@@ -1,6 +1,10 @@
 # LinkedIn Clone
 # [LIVE](https://linkedin-clone-iota-umber.vercel.app/)
 
+
+https://user-images.githubusercontent.com/95588996/179829567-82c19fb9-6b9f-4491-a816-64d8f76e916e.mp4
+
+
 # Tech
 
 - [React] - React is a JavaScript-based UI development framework.
