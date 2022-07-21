@@ -15,7 +15,7 @@ https://user-images.githubusercontent.com/95588996/179829567-82c19fb9-6b9f-4491-
 - [Firebase] - App development platform that helps you build and grow apps and games users love.
 - [SASS] - Sass is an extension of CSS that enables you to use things like variables, nested rules, inline imports, and more.
 - [Material-UI] - Material-UI is an open-source project that features React components that implement Google's Material Design.
-- [Visual-Studio] -Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+- [Visual-Studio-Code] - Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
 
 ## Features and Functionality
 
@@ -65,7 +65,7 @@ https://user-images.githubusercontent.com/95588996/179829567-82c19fb9-6b9f-4491-
 - Initialize Vercel
 
 ```sh
-  Vercel Github
+  vercel github
 ```
 
 - Deploy clone and make it live
@@ -84,10 +84,49 @@ https://user-images.githubusercontent.com/95588996/179829567-82c19fb9-6b9f-4491-
 - Create different 4 pages
 
 ```sh
-  /
-  /home
-  /register
-  /login
+  layout
+  home
+  register
+  login
+```
+## App Flow
+
+Project Structure
+```
+project
+|-- public
+|-- src
+|    |-- assests
+|    |      |-- images
+|    |      |-- scss
+|    |-- components
+|    |      |-- Feed
+|    |      |-- Header
+|    |      |-- HeaderOption
+|    |      |-- InputOption
+|    |      |-- Logout
+|    |      |-- Post
+|    |      |-- Sidebar
+|    |      |-- SignInGoogle
+|    |      |-- Widgets
+|    |-- pages
+|    |      |-- Home
+|    |      |-- Layout
+|    |      |-- Login
+|    |      |-- Register
+|    |-- router
+|    |      |-- View
+|    |-- store
+|    |      |-- store
+|    |      |-- UserSlice
+|    |-- utils
+|    |      |-- firebase
+|    |-- App.css
+|    |-- App.js
+|    |-- index.css
+|    `-- index.js
+|-- package.json
+`-- README.md
 ```
 
 ### Future Plans
