@@ -1,22 +1,19 @@
 .sign-in-google {
-  height: 48px;
-  width: 320px;
+  width: 21.625rem;
+  height: 3.5rem;
   font-size: large;
   color: black;
   background: #fff;
   border-radius: 24px;
-  margin-top: 20px;
-  margin-bottom: 30px;
   border: 1px solid #d3d3d3;
   cursor: pointer;
-  margin-left: -100px;
 
   &:hover {
     background: whitesmoke;
   }
   & > img {
     width: 6%;
-    margin-bottom: -4px;
+    margin-bottom: -3px;
     margin-right: 7px;
   }
 }

@@ -62,7 +62,7 @@ const Layout = () => {
         </div>
       </div>
 
-      <div class="layout-row">
+      <div className="layout-row">
         <div>
           <div className="layout-content">
             <h1>

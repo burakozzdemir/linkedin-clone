@@ -49,11 +49,8 @@ const Register = () => {
 
   return (
     <div className="register">
-      <a href="https://linkedin-clone-iota-umber.vercel.app/register">
         <img src={logo} alt="" />
-      </a>
       <h2>Get the most out of your professional life</h2>
-      <div className="register-form">
         <form>
           <input
             value={name}
@@ -139,7 +136,6 @@ const Register = () => {
             Get Help
           </a>
         </p>
-      </div>
       <footer className="register-footer">
         <img src="./linkedin-logo.png" alt="" />
         <a href=""> © 2022</a>

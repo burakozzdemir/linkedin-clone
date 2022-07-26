@@ -8,9 +8,9 @@ const View = () => {
   return (
     <>
       <Routes>
-        <Route path="/*" element={<Layout />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="*" element={<Layout />} />
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </>
   );
