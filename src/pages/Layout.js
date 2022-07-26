@@ -42,9 +42,7 @@ const Layout = () => {
     <>
       <div className="layout">
         <div className="layout-left">
-          <a href="https://linkedin-clone-iota-umber.vercel.app/">
-            <img src={logo} alt="" />
-          </a>
+          <img src={logo} alt="" />
         </div>
         <div className="layout-right">
           <HeaderOption Icon={ExploreIcon} title="Explore" />
@@ -55,19 +53,36 @@ const Layout = () => {
           <Link to="/register">
             <button className="layout-button-one">Join now</button>
           </Link>
-
           <Link to="/login">
             <button className="layout-button-two">Sign In</button>
           </Link>
         </div>
       </div>
-
       <div className="layout-row">
-        <div>
-          <div className="layout-content">
-            <h1>
-              Welcome to your <br /> proffessional <br /> community!
-            </h1>
+        <div className="layout-content">
+          <h1>
+            Welcome to your <br /> proffessional <br /> community!
+          </h1>
+          <div>
+            <form className="layout-form">
+              <input
+                type="email"
+                placeholder="E-mail or phone number"
+                onChange={(e) => SetEmail(e.target.value)}
+              ></input>
+              <input
+                type="password"
+                placeholder="Password"
+                onChange={(e) => SetPassword(e.target.value)}
+              ></input>
+              <a>Forgot your password?</a>
+
+              <NavLink to="/home">
+                <button className="layout-button" onClick={loginToApp}>
+                  Sign In
+                </button>
+              </NavLink>
+            </form>
           </div>
         </div>
         <div className="layout-img">
@@ -76,28 +91,6 @@ const Layout = () => {
             alt=""
           />
         </div>
-      </div>
-
-      <div>
-        <form className="layout-form">
-          <input
-            type="email"
-            placeholder="E-mail or phone number"
-            onChange={(e) => SetEmail(e.target.value)}
-          ></input>
-          <input
-            type="password"
-            placeholder="Password"
-            onChange={(e) => SetPassword(e.target.value)}
-          ></input>
-          <a>Forgot your password?</a>
-
-          <NavLink to="/home">
-            <button className="layout-button" onClick={loginToApp}>
-              Sign In
-            </button>
-          </NavLink>
-        </form>
       </div>
     </>
   );

@@ -4,17 +4,17 @@
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 10px 0px 10px 0px;
+  padding: 0.625rem 0 0.625rem 0;
   width: 100%;
   z-index: 999;
 
   &-left {
     display: flex;
 
-    & > a > img {
+    & > img {
       object-fit: contain;
-      height: 40px;
-      margin-left: 170px;
+      height: 2.5rem;
+      margin: 0.7rem 0 0 9.7rem;
       cursor: pointer;
     }
   }
@@ -24,15 +24,14 @@
   }
 
   &-button-one {
-    width: 120px;
-    padding: 11px;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 7.5rem;
+    padding: 0.6875rem;
+    margin: 0.3125rem 0.3125rem 0 0.3125rem;
     color: black;
-    background-color: white;
+    background: white;
     border: none;
-    border-radius: 25px;
-    font-size: 19px;
+    border-radius: 1.5625rem;
+    font-size: 1.1875rem;
     font-family: sans-serif;
     cursor: pointer;
 
@@ -41,16 +40,15 @@
     }
   }
   &-button-two {
-    width: 130px;
-    height: 50px;
-    padding: 11px;
+    width: 8.125rem;
+    height: 3.125rem;
+    padding: 0.6875rem;
     color: #0a66c2;
-    margin-right: 140px;
+    margin-right: 11.75rem;
     background-color: white;
     border: 1px solid #0a66c2;
-    border-radius: 25px;
-    font-weight: 600px;
-    font-size: 18px;
+    border-radius: 1.5625rem;
+    font-size: 1.2rem;
     cursor: pointer;
 
     &:hover {
@@ -59,59 +57,46 @@
   }
   &-row {
     width: 76%;
-    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #8f5849;
-    margin-top: 2%;
-
-    & > h1 {
-      display: flex;
-      align-items: center;
-      margin: 15px;
-      font-size: 12px;
-    }
+    margin: 1.5% 0 0 11%;
   }
   &-content > h1 {
-    font-size: 65px;
-    margin-top: 20px;
-    margin-bottom: 500px;
+    font-size: 3.9rem;
+    margin-bottom: 2rem;
     font-weight: 150;
   }
 
   &-form {
     display: flex;
     flex-direction: column;
-    margin-left: 175px;
-    position: absolute;
-    top: 53%;
 
     & > input {
-      width: 430px;
-      height: 50px;
-      font-size: 20px;
-      padding-left: 10px;
-      margin-bottom: 10px;
-      border-radius: 5px;
+      height: 3.125rem;
+      font-size: 1.25rem;
+      padding-left: 0.625rem;
+      margin-bottom: 0.625rem;
+      border-radius: 0.3125rem;
       border: 1px solid lightgray;
     }
     & > a {
       color: black;
-      margin: 5px 0 30px;
+      margin: 0.3125rem 0 1.875rem;
       cursor: pointer;
     }
     & > p {
-      margin-top: 20px;
+      margin-top: 1.25rem;
     }
   }
   &-button {
-    width: 440px;
-    height: 55px;
+    width: 27.5rem;
+    height: 3.8rem;
     font-size: large;
     color: #fff;
     background-color: #0073b1;
-    border-radius: 25px;
+    border-radius: 2.5rem;
     cursor: pointer;
     letter-spacing: 1px;
     font-weight: normal;
@@ -122,16 +107,12 @@
       background: #006097;
     }
   }
-  &-img {
-    width: 60%;
 
+  &-img {
     & > img {
-      max-width: 100%;
+      max-width: 105%;
       height: auto;
-      position: relative;
-      bottom: 65px;
-      margin-left: 190px;
-      margin-bottom: 30px;
+      margin: 3rem 0 0 10rem;
     }
   }
 }
