@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../store/userSlice";
-import SignInGoogle from "../components/SignInGoogle";
 import { NavLink } from "react-router-dom";
+import SignInGoogle from "../components/SignInGoogle";
 import logo from "../assets/images/linkedin-logo.png";
 
 const Register = () => {

@@ -7,14 +7,15 @@ import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
 import ChatIcon from "@material-ui/icons/Chat";
 import NotificationIcon from "@material-ui/icons/Notifications";
 import ViewComfyIcon from "@material-ui/icons/ViewComfy";
-import { NavLink } from "react-router-dom";
 import Logout from "./Logout";
+import { NavLink } from "react-router-dom";
+
 
 const Header = () => {
   return (
     <div className="header">
       <div className="header-left">
-        <NavLink to="/login">
+        <NavLink to="login">
           <img
             className="header-left-img"
             src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png "

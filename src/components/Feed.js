@@ -5,12 +5,13 @@ import EventNoteIcon from "@material-ui/icons/EventNote";
 import CalendarViewDayIcon from "@material-ui/icons/CalendarViewDay";
 import InputOption from "./InputOption";
 import Post from "./Post";
-import { db } from "../utils/firebase";
 import firebase from "firebase";
+import FlipMove from "react-flip-move";
+import { db } from "../utils/firebase";
 import { useSelector } from "react-redux";
 import { selectUser } from "../store/userSlice";
-import FlipMove from "react-flip-move";
 import { Avatar } from "@material-ui/core";
+
 
 const Feed = () => {
   const user = useSelector(selectUser);

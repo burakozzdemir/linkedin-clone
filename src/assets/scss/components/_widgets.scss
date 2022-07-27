@@ -1,28 +1,28 @@
 .widgets {
   position: sticky;
-  top: 80px;
+  top: 5rem;
   flex: 0.28;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border: 1px solid lightgray;
   height: fit-content;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 
   &-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.625rem;
 
     & > h2 {
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: bold;
       cursor: pointer;
     }
   }
   &-article {
     display: flex;
-    padding: 10px;
+    padding: 0.625rem;
     cursor: pointer;
 
     &:hover {
@@ -31,20 +31,20 @@
   }
   &-articleLeft {
     color: #0177b7;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
 
     & > .MuiSvgIcon-root {
-      font-size: 15px;
+      font-size: 1rem;
     }
   }
   &-articleRight {
     flex: 1;
 
     & > h4 {
-      font-size: 14px;
+      font-size: 0.875rem;
     }
     & > p {
-      font-size: 12px;
+      font-size: 0.75rem;
       color: gray;
     }
   }

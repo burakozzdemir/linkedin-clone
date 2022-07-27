@@ -1,14 +1,14 @@
 .sidebar {
   position: sticky;
-  top: 82px;
+  top: 5rem;
   flex: 0.2;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   text-align: center;
   height: fit-content;
 
   &-avatar {
     position: relative;
-    bottom: 20px;
+    bottom: 1.25rem;
     cursor: pointer;
   }
 
@@ -18,34 +18,34 @@
     align-items: center;
     border: 1px solid lightgray;
     border-bottom: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
     background-color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
 
     & > h4 {
       color: gray;
-      font-size: 12px;
-      margin-top: 7px;
-      margin-bottom: 8px;
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
       font-weight: 500;
     }
     & > h2 {
-      font-size: 16px;
+      font-size: 1rem;
       cursor: pointer;
     }
 
     & > img {
-      margin-bottom: -20px;
+      margin-bottom: -1.25rem;
       width: 100%;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
+      border-top-left-radius: 0.625rem;
+      border-top-right-radius: 0.625rem;
       object-fit: cover;
     }
   }
 
   &-stats {
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid lightgray;
     background-color: white;
 
@@ -54,26 +54,24 @@
     }
   }
   &-stat {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     display: flex;
     justify-content: space-between;
 
     & > p {
       color: gray;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 600;
       color: black;
       cursor: pointer;
     }
     & > a {
       text-decoration: none;
-      font-size: 12px;
-      margin-top: 5px;
+      font-size: 0.75rem;
+      margin-top: 0.3125rem;
       color: black;
       font-weight: bold;
-      margin-left: 25px;
-      position: relative;
-      bottom: 13px;
+      margin-left: 1.5625rem;
     }
     & > a:hover {
       color: blue;
@@ -86,22 +84,22 @@
   }
   &-bottom {
     text-align: left;
-    padding: 10px;
-    margin-top: 7px;
+    padding: 0.625rem;
+    margin-top: 0.5rem;
     border: 1px solid lightgray;
     background-color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
   }
 
   &-recentItem {
     display: flex;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #0a66c2;
     font-weight: bolder;
     cursor: pointer;
-    margin-bottom: 5px;
-    padding: 5px;
+    margin-bottom: 0.3125rem;
+    padding: 0.3125rem;
 
     &:hover {
       text-decoration: underline;
@@ -111,21 +109,21 @@
 
   &-text {
     position: relative;
-    bottom: 8px;
+    bottom: 0.5rem;
   }
 
   &-stats-text {
-    padding: 10px;
+    padding: 0.625rem;
     border: 1px solid lightgray;
     background-color: white;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
 
     & > p {
-      margin-top: 10px;
+      margin-top: 0.625rem;
       display: flex;
       justify-content: space-between;
-      font-size: 13px;
+      font-size: 0.8125rem;
       font-weight: 600;
       color: black;
       cursor: pointer;
@@ -137,15 +135,15 @@
   &-items {
     position: relative;
     bottom: 1px;
-    font-size: 12px;
     right: 25.5%;
+    font-size: 0.75rem;
     font-weight: 600;
   }
   &-bottom-text {
     color: gray;
     position: relative;
-    bottom: 3px;
-    font-size: 14px;
+    bottom: 0.1875rem;
+    font-size: 0.875rem;
     font-weight: 600;
   }
 }

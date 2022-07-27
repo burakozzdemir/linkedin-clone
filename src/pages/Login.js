@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import SignInGoogle from "../components/SignInGoogle";
 import { auth } from "../utils/firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, selectUser } from "../store/userSlice";
+import SignInGoogle from "../components/SignInGoogle";
 import logo from "../assets/images/linkedin-logo.png";
 
 const Login = () => {
@@ -37,9 +37,7 @@ const Login = () => {
   return (
     <>
       <div className="login">
-        <a href="https://linkedin-clone-iota-umber.vercel.app/login">
-          <img src={logo} alt="" />
-        </a>
+        <img src={logo} alt="" />
         <h2>Sign In</h2>
         <h4>
           Get the latest news about your professional <br /> world.
@@ -81,7 +79,6 @@ const Login = () => {
           </NavLink>
         </p>
         <footer className="login-footer">
-          <img src="./linkedin-logo.png" alt="" />
           <a href=""> © 2022</a>
           <a href="">User Agreement</a>
           <a href="">Privacy Policy</a>

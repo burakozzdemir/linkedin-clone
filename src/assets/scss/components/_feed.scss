@@ -1,13 +1,13 @@
 .feed {
   flex: 0.45;
-  margin: 9px 20px;
+  margin: 0.5rem 1.25rem;
 
   &-inputContainer {
     background-color: white;
-    padding: 10px 0 14px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    height: 90px;
+    padding: 0.625rem 0 0.875rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1.25rem;
+    height: 5.625rem;
   }
   &-avatar {
     position: absolute;
@@ -17,41 +17,43 @@
   }
   &-input {
     border: 1px solid lightgray;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     display: flex;
-    padding: 10px;
+    padding: 0.625rem;
     color: gray;
-    padding-left: 15px;
-    height: 30px;
+    padding-left: 1rem;
+    height: 1.875rem;
     width: 78%;
-    margin-left: 75px;
-  }
-  &-input > form {
-    display: flex;
-    width: 100%;
-  }
-  &-input > form > input {
-    position: relative;
-    right: 50px;
-    border: none;
-    flex: 1;
-    margin-left: 10px;
-    outline-width: 0;
-    font-weight: 600;
-  }
-  &-input > form > button {
-    display: none;
+    margin-left: 4.6875rem;
+
+    & > form {
+      display: flex;
+      width: 100%;
+
+      & > input {
+        position: relative;
+        right: 3.125rem;
+        border: none;
+        flex: 1;
+        margin-left: 0.625rem;
+        outline-width: 0;
+        font-weight: 600;
+      }
+    }
+    & > form > button {
+      display: none;
+    }
   }
 
   &-inputOptions {
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    bottom: 7px;
+    bottom: 0.5rem;
   }
   &-hr {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     border: 0.5px solid lightgray;
   }
 }
