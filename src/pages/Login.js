@@ -2,17 +2,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { auth } from "../utils/firebase";
-import { useDispatch, useSelector } from "react-redux";
-import { login, selectUser } from "../store/userSlice";
+import { useDispatch } from "react-redux";
+import { login } from "../store/userSlice";
 import SignInGoogle from "../components/SignInGoogle";
 import logo from "../assets/images/linkedin-logo.png";
 
 const Login = () => {
   const [email, SetEmail] = useState("");
   const [password, SetPassword] = useState("");
-
-  // eslint-disable-next-line no-unused-vars
-  const user = useSelector(selectUser);
 
   const dispatch = useDispatch();
 

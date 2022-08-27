@@ -62,10 +62,13 @@
     justify-content: space-between;
     color: #8f5849;
     margin: 1.5% 0 0 11%;
+
   }
+  
   &-content > h1 {
     font-size: 3.9rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-weight: 150;
   }
 
@@ -109,6 +112,8 @@
   }
 
   &-img {
+    // overflow: hidden;
+
     & > img {
       max-width: 105%;
       height: auto;
